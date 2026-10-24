@@ -18,41 +18,45 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 
 <template>
   <div>
-    <div class="fixed left-0 top-0 z-50 h-[3px] bg-brand shadow-[0_0_12px_#e8752470]" :style="{ width: `${progress}%` }" />
+    <div class="fixed left-0 top-0 z-50 h-[3px] bg-brand" :style="{ width: `${progress}%` }" />
 
-    <div class="flex justify-center gap-4 bg-ink px-[5.5%] py-2.5 text-center text-[9px] uppercase tracking-[.12em] text-[#fff2e8] sm:justify-between sm:text-[11px]">
-      <span>Produzione di profili in legno dal {{ company.since }}</span>
-      <span class="hidden text-[#ffb276] sm:inline">Competenza artigianale · Precisione industriale</span>
+    <div class="flex justify-between gap-4 bg-ink px-[5.5%] py-2 font-mono text-[11px] uppercase tracking-[.12em] text-white/70">
+      <span class="hidden sm:inline">{{ company.address.city }} ({{ company.address.province }}) · Dal {{ company.since }}</span>
+      <span class="sm:hidden">Profili in legno dal {{ company.since }}</span>
+      <a :href="company.phoneHref" class="font-medium text-brand hover:text-white">{{ company.phone }}</a>
     </div>
 
     <header
-      class="sticky top-0 z-40 flex h-[72px] items-center justify-between border-b border-line px-[5.5%] transition sm:h-[86px]"
-      :class="scrolled ? 'bg-paper/90 shadow-[0_8px_30px_#211d1910] backdrop-blur-md' : 'bg-paper'"
+      class="sticky top-0 z-40 flex h-[68px] items-center justify-between border-b px-[5.5%] transition md:h-[80px]"
+      :class="scrolled ? 'border-line bg-paper/90 backdrop-blur-md' : 'border-line bg-paper'"
     >
-      <a href="#home" aria-label="G.P.E. Rizzolo - Home">
-        <img :src="images.logo" alt="G.P.E. Rizzolo" width="900" height="257" class="h-9 w-auto sm:h-11">
-      </a>
+      <NuxtLink to="/" aria-label="G.P.E. Rizzolo - Home">
+        <NuxtImg format="png" :src="images.logo" alt="G.P.E. Rizzolo" width="900" height="257" class="h-10 w-auto md:h-[50px]" />
+      </NuxtLink>
 
       <nav
-        class="absolute inset-x-0 top-[72px] flex-col items-stretch gap-1 border-b border-line bg-paper px-[5.5%] py-5 text-[13px] font-semibold md:static md:flex md:flex-row md:items-center md:gap-7 md:border-0 md:bg-transparent md:p-0"
+        class="absolute inset-x-0 top-[68px] flex-col items-stretch gap-0 border-b border-line bg-paper px-[5.5%] py-3 md:static md:flex md:flex-row md:items-center md:gap-8 md:border-0 md:bg-transparent md:p-0"
         :class="open ? 'flex' : 'hidden md:flex'"
       >
-        <a
+        <NuxtLink
           v-for="link in navLinks"
           :key="link.href"
-          :href="link.href"
-          class="py-2 transition hover:text-brand md:py-0"
+          :to="link.href"
+          class="border-b border-line py-3.5 font-mono text-[13px] font-medium uppercase tracking-[.1em] text-ink transition hover:text-brand-ink md:border-0 md:py-0"
+          :exact-active-class="link.href.includes('#') ? '' : '!text-brand-ink'"
           @click="open = false"
-        >{{ link.label }}</a>
-        <a href="#contatti" class="btn" @click="open = false">Parliamo del tuo progetto ↗</a>
+        >{{ link.label }}</NuxtLink>
+        <NuxtLink to="/contatti" class="btn mt-3 !py-2.5 md:mt-0" @click="open = false">Preventivo <span>→</span></NuxtLink>
       </nav>
 
       <button
-        class="text-2xl md:hidden"
+        class="grid size-11 place-items-center border-2 border-ink md:hidden"
         :aria-label="open ? 'Chiudi menu' : 'Apri menu'"
         :aria-expanded="open"
         @click="open = !open"
-      >{{ open ? '✕' : '☰' }}</button>
+      >
+        <span class="font-mono text-lg leading-none">{{ open ? '✕' : '☰' }}</span>
+      </button>
     </header>
   </div>
 </template>

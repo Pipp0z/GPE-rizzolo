@@ -1,29 +1,38 @@
 <template>
-  <section id="su-misura" class="grid items-center gap-[5%] bg-cream px-[5.5%] md:grid-cols-2 md:gap-[7%]">
-    <div v-reveal class="relative h-[320px] overflow-hidden shadow-[-9px_9px_0_#e87524] md:h-[560px] md:shadow-[-18px_18px_0_#e87524]">
-      <img :src="images.custom" alt="Portabottiglie in rovere realizzato su misura" loading="lazy" class="size-full object-cover">
-      <span class="absolute bottom-0 left-0 bg-brand px-[18px] py-3.5 text-[9px] font-bold tracking-[.15em] text-white">LAVORAZIONI SU MISURA</span>
-    </div>
+  <section id="su-misura" class="section-pad bg-brand text-ink">
+    <div class="wrap">
+      <div v-reveal class="grid items-end gap-8 lg:grid-cols-12">
+        <div class="lg:col-span-8">
+          <p class="kicker !text-ink"><b class="!bg-ink !text-white">04</b> Su misura</p>
+          <h2 class="display mt-5 text-[clamp(3rem,8.5vw,8rem)] !text-ink">Hai un disegno.<br>Noi gli diamo forma.</h2>
+        </div>
+        <p class="text-[17px] leading-[1.65] lg:col-span-4">
+          Non tutti i progetti entrano in un catalogo. Ascoltiamo l’esigenza, valutiamo il profilo e troviamo
+          la soluzione più adatta: da un disegno, da un campione o da una semplice idea.
+        </p>
+      </div>
 
-    <div v-reveal class="pb-[60px] pt-[45px] md:py-[65px]">
-      <div class="eyebrow">La differenza è nel dettaglio</div>
-      <h2 class="my-[18px] font-serif text-[clamp(2.7rem,4.8vw,4rem)] font-normal leading-[1.04] tracking-[-.05em]">
-        Hai un disegno.<br><em class="text-brand">Noi gli diamo forma.</em>
-      </h2>
-      <p class="max-w-[450px] text-sm leading-[1.9] text-muted">
-        Non tutti i progetti entrano in un catalogo. Per questo il su misura è al centro del nostro modo di lavorare:
-        ascoltiamo le esigenze, valutiamo il profilo e lavoriamo per trovare la soluzione più adatta.
-      </p>
+      <div class="mt-14 grid gap-10 lg:grid-cols-12 lg:gap-8">
+        <ol class="grid gap-0 lg:col-span-7">
+          <li v-for="step in steps" :key="step.n" v-reveal class="grid grid-cols-[88px_1fr] items-baseline gap-4 border-t-2 border-ink py-6 md:grid-cols-[120px_1fr]">
+            <span class="display text-[64px] text-ink md:text-[88px]">{{ step.n }}</span>
+            <div>
+              <h3 class="display text-[30px] !text-ink md:text-[38px]">{{ step.title }}</h3>
+              <p class="mt-1 text-[16px]">{{ step.text }}</p>
+            </div>
+          </li>
+          <li class="border-t-2 border-ink pt-8">
+            <NuxtLink to="/contatti" class="btn !border-ink !bg-ink !text-white hover:!bg-white hover:!text-ink">Parliamo del tuo progetto →</NuxtLink>
+          </li>
+        </ol>
 
-      <ol class="mt-9 grid grid-cols-3 gap-3.5 md:gap-5">
-        <li v-for="step in steps" :key="step.n" class="border-t-2 border-brand pt-4">
-          <b class="font-serif text-2xl font-normal text-brand">{{ step.n }}</b>
-          <h3 class="mb-1.5 mt-3 text-[11px] font-bold md:text-[13px]">{{ step.title }}</h3>
-          <p class="text-[10px] leading-[1.6] md:text-[11px]">{{ step.text }}</p>
-        </li>
-      </ol>
-
-      <a class="btn mt-8" href="#contatti">Parliamo del tuo progetto ↗</a>
+        <div v-reveal class="lg:col-span-5">
+          <div class="relative bg-paper p-3 shadow-[10px_10px_0_#16120e]">
+            <NuxtImg format="webp" :src="images.custom" alt="Portabottiglie in rovere realizzato su misura" width="1100" height="733" loading="lazy" class="photo-ink w-full" />
+            <p class="mt-2 font-mono text-[11px] uppercase tracking-[.12em] text-muted">Fig. — Realizzazione su disegno</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
