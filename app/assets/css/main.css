@@ -1,1 +1,64 @@
 @import "tailwindcss";
+
+@theme {
+  --color-ink: #211d19;
+  --color-paper: #fffaf4;
+  --color-muted: #71665e;
+  --color-line: #ead8c8;
+  --color-brand: #e87524;
+  --color-brand-dark: #c65a13;
+  --color-brand-soft: #ffdfc2;
+  --color-cream: #fff0e4;
+  --color-sand: #f5e8db;
+
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+
+  --breakpoint-3xl: 100rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply flex items-center gap-2.5 text-[10px] font-bold uppercase tracking-[.17em] text-brand before:h-px before:w-7 before:bg-current before:content-[''];
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-3.5 border border-brand bg-brand px-5 py-3.5 text-xs font-bold tracking-wide text-white transition duration-200 hover:-translate-y-0.5 hover:bg-brand-dark;
+  }
+
+  .btn-secondary {
+    @apply border-[#d9bca5] bg-transparent text-ink hover:bg-[#ffeadb];
+  }
+
+  .section-title {
+    @apply mt-4 font-serif text-[clamp(2.6rem,4.8vw,4.25rem)] font-normal leading-[1.05] tracking-[-.045em];
+  }
+}
+
+/* Reveal on scroll (applied via v-reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}

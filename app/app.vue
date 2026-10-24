@@ -1,6 +1,17 @@
 <template>
-  <div class="flex min-h-screen items-center justify-center bg-slate-50">
+  <div>
     <NuxtRouteAnnouncer />
-    <h1 class="text-4xl font-bold text-slate-900">GPE Rizzolo</h1>
+    <AppHeader />
+    <main>
+      <HomeHero />
+      <HomeTrustBar />
+      <HomeProducts />
+      <HomeCatalog />
+      <HomeCustom />
+      <HomeAbout />
+      <HomeCertifications />
+      <HomeContactCta />
+    </main>
+    <AppFooter />
   </div>
 </template>
