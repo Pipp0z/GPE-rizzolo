@@ -1,5 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
+const baseURL = process.env.NUXT_APP_BASE_URL || '/'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -63,10 +65,11 @@ export default defineNuxtConfig({
   },
 
   app: {
+    baseURL,
     head: {
       htmlAttrs: { lang: 'it' },
       meta: [{ name: 'theme-color', content: '#e87524' }],
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+      link: [{ rel: 'icon', type: 'image/png', href: `${baseURL}favicon.png` }]
     }
   }
 })
