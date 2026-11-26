@@ -88,10 +88,6 @@
     @apply mx-auto w-full max-w-[100rem];
   }
 
-  .outline-text {
-    -webkit-text-stroke: 1.5px currentColor;
-    color: transparent;
-  }
 }
 
 /* Reveal on scroll */

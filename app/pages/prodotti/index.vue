@@ -1,7 +1,7 @@
 <script setup lang="ts">
 usePageSeo({
   title: 'Profili in legno: tutti i prodotti',
-  description: 'Profili per quadri, battiscopa, boiserie, serramenti, fermavetri, angolari, corrimano, masselli, perlinati, frangisole, tondi e doghe: produzione su misura G.P.E. Rizzolo.',
+  description: 'Battiscopa, profili per quadri, serramenti, perlinati, saune, semilavorati, profili di finitura e boiserie: produzione su misura G.P.E. Rizzolo.',
   path: '/prodotti',
   jsonLd: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Prodotti', path: '/prodotti' }])],
 })

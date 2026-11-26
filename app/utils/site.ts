@@ -34,6 +34,24 @@ export const images = {
   logoWhite: '/images/logo-bianco.png',
 }
 
+export interface SpecRow {
+  label: string
+  value: string
+}
+
+export interface FamilyChild {
+  slug: string
+  name: string
+  text: string
+  image: string
+  /** Paragrafi della pagina di dettaglio (default: solo `text`) */
+  body?: string[]
+  /** Righe della scheda tecnica: sovrascrivono/integrano quelle di default */
+  specs?: SpecRow[]
+  /** Link a una scheda tecnica scaricabile (PDF) */
+  pdf?: string
+}
+
 export interface Family {
   slug: string
   name: string
@@ -46,12 +64,29 @@ export interface Family {
   uses: string[]
   image: string
   gallery?: string[]
+  /** Prodotti compresi in questa categoria */
+  children?: FamilyChild[]
   note: string
 }
 
 const COMMON_OPTIONS = 'Misure, essenze e finiture su richiesta.'
 
 export const families: Family[] = [
+  {
+    slug: 'battiscopa',
+    name: 'Battiscopa',
+    seoTitle: 'Battiscopa in legno',
+    seoDescription:
+      'Battiscopa e zoccolini in legno su misura: al naturale, laccati o tinti, in diverse essenze e sezioni. Produzione G.P.E. Rizzolo, Padova.',
+    intro: 'Zoccolini in legno al naturale, laccati o tinti, in varie sezioni.',
+    body: [
+      'I nostri battiscopa in legno sono disponibili in diverse sezioni e sagome, al naturale oppure colorati: bianchi, tinti noce o con finiture personalizzate.',
+      'Forniamo rivenditori, falegnamerie, imprese e progettisti, anche con quantità e misure dedicate.',
+    ],
+    uses: ['Pavimenti in parquet e laminato', 'Ristrutturazioni e nuove costruzioni', 'Rivenditori e falegnamerie', 'Finiture colorate su richiesta'],
+    image: img('battiscopa'),
+    note: COMMON_OPTIONS,
+  },
   {
     slug: 'profili-per-quadri',
     name: 'Profili per quadri',
@@ -69,18 +104,91 @@ export const families: Family[] = [
     note: COMMON_OPTIONS,
   },
   {
-    slug: 'battiscopa',
-    name: 'Battiscopa',
-    seoTitle: 'Battiscopa in legno',
+    slug: 'profili-per-serramenti',
+    name: 'Profili per serramenti',
+    seoTitle: 'Profili in legno per serramenti',
     seoDescription:
-      'Battiscopa e zoccolini in legno su misura: al naturale, laccati o tinti, in diverse essenze e sezioni. Produzione G.P.E. Rizzolo, Padova.',
-    intro: 'Zoccolini in legno al naturale, laccati o tinti, in varie sezioni.',
+      'Profili in legno per serramenti: fermavetri, coprifili e componenti per infissi, su misura in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
+    intro: 'Fermavetri, coprifili e profili per infissi, con attenzione a dimensioni e finitura.',
     body: [
-      'I nostri battiscopa in legno sono disponibili in diverse sezioni e sagome, al naturale oppure colorati: bianchi, tinti noce o con finiture personalizzate.',
-      'Forniamo rivenditori, falegnamerie, imprese e progettisti, anche con quantità e misure dedicate.',
+      'Produciamo profili in legno per serramenti, in dimensioni e finiture concordate con il cliente. La profilatura in asta è la nostra attività principale e viene eseguita con grande attenzione alla precisione.',
+      'Nella categoria rientrano fermavetri e coprifili, in diverse sagome e essenze.',
     ],
-    uses: ['Pavimenti in parquet e laminato', 'Ristrutturazioni e nuove costruzioni', 'Rivenditori e falegnamerie', 'Finiture colorate su richiesta'],
-    image: img('battiscopa'),
+    uses: ['Produttori di serramenti', 'Falegnamerie', 'Componenti per infissi', 'Serie e pezzi su misura'],
+    image: img('serramenti'),
+    children: [
+      { slug: 'fermavetri', name: 'Fermavetri', text: 'Fermavetro in legno in molte sagome e sezioni, forniti in asta.', image: img('fermavetri') },
+      { slug: 'coprifili', name: 'Coprifili', text: 'Coprifili in legno per serramenti e infissi, in diverse sezioni.', image: img('serramenti-fermavetro') },
+    ],
+    note: COMMON_OPTIONS,
+  },
+  {
+    slug: 'perlinati',
+    name: 'Perlinati',
+    seoTitle: 'Perlinati, frangisole e masselli piallati in legno',
+    seoDescription:
+      'Perlinati, profili per frangisole e masselli piallati in legno, per rivestimenti e interni. Produzione G.P.E. Rizzolo, Padova.',
+    intro: 'Perlinati e tavole a incastro, frangisole e masselli piallati.',
+    body: [
+      'Produciamo perlinati e tavole a incastro in legno, adatti a rivestimenti interni di pareti e soffitti.',
+      'Nella categoria rientrano anche i profili per frangisole e i masselli piallati, in diverse essenze e misure.',
+    ],
+    uses: ['Rivestimenti di pareti', 'Soffitti in legno', 'Frangisole e rivestimenti esterni', 'Falegnameria e carpenteria'],
+    image: img('perlinati'),
+    children: [
+      { slug: 'frangisole', name: 'Frangisole', text: 'Profili per frangisole e rivestimenti esterni, in diverse sagome e finiture.', image: img('frangisole') },
+      { slug: 'masselli-piallati', name: 'Masselli piallati', text: 'Masselli e listelli piallati di varie sezioni, in diverse essenze.', image: img('masselli') },
+    ],
+    note: COMMON_OPTIONS,
+  },
+  {
+    slug: 'profili-per-saune',
+    name: 'Profili per saune',
+    seoTitle: 'Profili in legno per saune',
+    seoDescription:
+      'Profili in legno per saune: produzione su misura in diverse essenze e sezioni. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
+    intro: 'Profili in legno per la realizzazione e la finitura di saune.',
+    body: [
+      'Produciamo profili in legno per saune, nell’essenza e nella sezione richieste dal progetto.',
+      'Contattaci per descriverci il tuo progetto: valutiamo insieme la soluzione più adatta.',
+    ],
+    uses: ['Costruttori di saune', 'Rivestimenti e finiture', 'Sezioni su disegno'],
+    image: img('frangisole'),
+    note: COMMON_OPTIONS,
+  },
+  {
+    slug: 'semilavorati',
+    name: 'Semilavorati',
+    seoTitle: 'Semilavorati in legno',
+    seoDescription:
+      'Semilavorati in legno di varie sezioni e lunghezze, in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
+    intro: 'Semilavorati in legno di varie sezioni, in qualsiasi essenza.',
+    body: [
+      'Forniamo semilavorati in legno in diverse sezioni e lunghezze, pronti per le lavorazioni successive.',
+      'Possiamo preparare le misure e le essenze richieste dal vostro ciclo produttivo.',
+    ],
+    uses: ['Falegnamerie e industrie del legno', 'Masselli per porte', 'Piattine e listelli', 'Sezioni su misura'],
+    image: img('masselli'),
+    note: COMMON_OPTIONS,
+  },
+  {
+    slug: 'profili-di-finitura',
+    name: 'Profili di finitura',
+    seoTitle: 'Profili di finitura in legno: tondi, angolari, corrimano',
+    seoDescription:
+      'Profili di finitura in legno: profili tondi, angolari e corrimano in diverse essenze e finiture. G.P.E. Rizzolo, produzione su misura a Padova.',
+    intro: 'Profili tondi, angolari e corrimano in diverse essenze e finiture.',
+    body: [
+      'Realizziamo profili di finitura in legno per completare arredi, scale e interni: profili tondi, angolari e corrimano.',
+      'Ogni profilo può essere prodotto nell’essenza, nella sezione e nella tinta richieste.',
+    ],
+    uses: ['Scale e balaustre', 'Protezione degli spigoli', 'Arredo e falegnameria', 'Colorazioni personalizzate'],
+    image: img('angolari'),
+    children: [
+      { slug: 'profili-tondi', name: 'Profili tondi', text: 'Tondini e profili torniti in legno, in varie misure e essenze.', image: img('tondi') },
+      { slug: 'angolari', name: 'Angolari', text: 'Angolari in legno in diverse essenze e tinte, al naturale o colorati.', image: img('angolari') },
+      { slug: 'corrimano', name: 'Corrimano', text: 'Corrimano in legno massello per scale e balaustre, dal chiaro naturale al noce scuro.', image: img('corrimano') },
+    ],
     note: COMMON_OPTIONS,
   },
   {
@@ -98,168 +206,32 @@ export const families: Family[] = [
     image: img('boiserie'),
     note: COMMON_OPTIONS,
   },
-  {
-    slug: 'profili-per-serramenti',
-    name: 'Profili per serramenti',
-    seoTitle: 'Profili in legno per serramenti',
-    seoDescription:
-      'Profili in legno per serramenti, coprifili e componenti per infissi: produzione su misura in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
-    intro: 'Profili e coprifili in legno per infissi, con attenzione a dimensioni e finitura.',
-    body: [
-      'Produciamo profili in legno per serramenti: coprifili, copri alluminio e componenti per infissi, in dimensioni e finiture concordate con il cliente.',
-      'La profilatura in asta è la nostra attività principale e viene eseguita con grande attenzione alla precisione.',
-    ],
-    uses: ['Produttori di serramenti', 'Coprifili e copri alluminio', 'Componenti per infissi', 'Serie e pezzi su misura'],
-    image: img('serramenti'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'fermavetri',
-    name: 'Fermavetri',
-    seoTitle: 'Fermavetri in legno',
-    seoDescription:
-      'Fermavetri in legno in molte sagome e sezioni, per serramenti e infissi. Produzione su misura G.P.E. Rizzolo, Padova.',
-    intro: 'Fermavetro in legno in molte sagome e sezioni.',
-    body: [
-      'I fermavetri sono tra le nostre produzioni storiche: diverse sagome, in varie essenze, forniti in asta.',
-      'Sviluppiamo anche sezioni dedicate in base al serramento o al disegno del cliente.',
-    ],
-    uses: ['Serramenti in legno', 'Falegnamerie', 'Sagome su disegno'],
-    image: img('fermavetri'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'angolari',
-    name: 'Angolari',
-    seoTitle: 'Angolari in legno',
-    seoDescription:
-      'Angolari in legno in diverse essenze e tinte: produzione su misura G.P.E. Rizzolo a Santa Giustina in Colle (PD).',
-    intro: 'Angolari in legno in diverse essenze e tinte.',
-    body: [
-      'Produciamo angolari in legno in varie sezioni, al naturale o tinti, per finiture e protezione degli spigoli.',
-      'Su richiesta realizziamo misure e colorazioni dedicate.',
-    ],
-    uses: ['Finiture di interni', 'Protezione degli spigoli', 'Arredo e falegnameria', 'Colorazioni personalizzate'],
-    image: img('angolari'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'corrimano',
-    name: 'Corrimano',
-    seoTitle: 'Corrimano in legno massello',
-    seoDescription:
-      'Corrimano in legno massello per scale e balaustre, in diverse essenze e finiture. Produzione G.P.E. Rizzolo, profili in legno dal 1960.',
-    intro: 'Corrimano in legno massello per scale e balaustre.',
-    body: [
-      'Realizziamo corrimano in legno massello con sagome ergonomiche, in diverse essenze e tonalità: dal chiaro naturale al noce scuro.',
-      'Forniamo scalifici, falegnamerie e imprese, con produzioni su misura.',
-    ],
-    uses: ['Scale interne', 'Balaustre', 'Scalifici e falegnamerie', 'Essenze e tinte a scelta'],
-    image: img('corrimano'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'masselli',
-    name: 'Masselli',
-    seoTitle: 'Masselli e listelli in legno',
-    seoDescription:
-      'Masselli e listelli in legno di varie sezioni, in qualsiasi essenza, anche per porte. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
-    intro: 'Masselli e listelli di varie sezioni, anche per porte.',
-    body: [
-      'Produciamo masselli e listelli in legno in diverse sezioni e lunghezze, comprese le lavorazioni per porte.',
-      'Possiamo fornire diverse essenze in base al vostro progetto.',
-    ],
-    uses: ['Masselli per porte', 'Semilavorati per falegnameria', 'Listelli e piattine', 'Sezioni su misura'],
-    image: img('masselli'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'perlinati',
-    name: 'Perlinati',
-    seoTitle: 'Perlinati e tavole a incastro in legno',
-    seoDescription:
-      'Perlinati e tavole in legno a incastro, per rivestimenti di pareti e soffitti. Produzione G.P.E. Rizzolo, Padova.',
-    intro: 'Perlinati e tavole a incastro per pareti e soffitti.',
-    body: [
-      'Produciamo perlinati e tavole a incastro in legno, adatti a rivestimenti interni di pareti e soffitti.',
-      'Diverse essenze e misure disponibili su richiesta.',
-    ],
-    uses: ['Rivestimenti di pareti', 'Soffitti in legno', 'Interni e mansarde'],
-    image: img('perlinati'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'frangisole',
-    name: 'Frangisole',
-    seoTitle: 'Profili in legno per frangisole',
-    seoDescription:
-      'Profili in legno per frangisole e rivestimenti esterni, in diverse sagome e essenze. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
-    intro: 'Profili per frangisole e rivestimenti esterni.',
-    body: [
-      'Realizziamo profili in legno per frangisole e rivestimenti esterni, in diverse sagome e finiture.',
-      'Possiamo sviluppare la sezione più adatta al vostro progetto.',
-    ],
-    uses: ['Frangisole', 'Facciate e rivestimenti esterni', 'Progetti di architettura'],
-    image: img('frangisole'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'profili-tondi',
-    name: 'Profili tondi',
-    seoTitle: 'Profili tondi e tondini in legno',
-    seoDescription:
-      'Profili tondi e tondini in legno torniti in varie misure e essenze. G.P.E. Rizzolo, produzione su misura a Padova.',
-    intro: 'Tondini e profili torniti in legno.',
-    body: [
-      'Produciamo profili tondi e tondini in legno, anche con teste e lavorazioni accessorie, secondo disegno.',
-      'Diverse essenze e diametri disponibili.',
-    ],
-    uses: ['Tondini e aste', 'Lavorazioni torniti', 'Componenti per arredo'],
-    image: img('tondi'),
-    note: COMMON_OPTIONS,
-  },
-  {
-    slug: 'doghe-per-panchine',
-    name: 'Doghe per panchine',
-    seoTitle: 'Doghe in legno per panchine',
-    seoDescription:
-      'Doghe in legno per panchine e arredo urbano,. G.P.E. Rizzolo, Santa Giustina in Colle (PD).',
-    intro: 'Doghe in legno per panchine e arredo urbano.',
-    body: [
-      'Forniamo doghe in legno per panchine e arredo urbano, in sezioni e lunghezze concordate.',
-      'Su richiesta prodotti certificati FSC®.',
-    ],
-    uses: ['Arredo urbano', 'Parchi e giardini', 'Aziende produttrici di panchine'],
-    image: img('doghe'),
-    note: 'Misure ed essenze su richiesta. Prodotti certificati FSC® disponibili su richiesta.',
-  },
-  {
-    slug: 'realizzazioni-speciali',
-    name: 'Realizzazioni speciali',
-    seoTitle: 'Realizzazioni speciali in legno su disegno',
-    seoDescription:
-      'Lavorazioni e pezzi speciali in legno realizzati su disegno o campione, in qualsiasi essenza. G.P.E. Rizzolo, Padova.',
-    intro: 'Pezzi speciali in legno realizzati su disegno o campione.',
-    body: [
-      'Quando un progetto non entra in un catalogo, sviluppiamo la soluzione insieme al cliente: portabottiglie, blocchi torniti, componenti con fori e incastri, supporti e molto altro.',
-      'Ci raccontate l’idea, definiamo insieme sezioni e lavorazioni e realizziamo il pezzo in qualsiasi essenza di legno.',
-    ],
-    uses: ['Componenti per arredo', 'Prototipi e piccole serie', 'Pezzi con fori e incastri', 'Su disegno o campione'],
-    image: img('realizzazioni'),
-    gallery: [img('realizzazioni-2'), img('su-misura'), img('realizzazioni-4')],
-    note: COMMON_OPTIONS,
-  },
 ]
 
 export const familyBySlug = (slug: string) => families.find(f => f.slug === slug)
 
-/** Le quattro famiglie mostrate in home. */
-export const featuredSlugs = ['profili-per-quadri', 'battiscopa', 'profili-per-serramenti', 'realizzazioni-speciali']
+export const childBySlug = (family: Family, slug: string) => family.children?.find(c => c.slug === slug)
+
+/** Scheda tecnica di default, integrata dalle righe specifiche del prodotto. */
+export function specSheet(extra: SpecRow[] = []): SpecRow[] {
+  const rows: SpecRow[] = [
+    { label: 'Essenze', value: 'Qualsiasi essenza di legno' },
+    { label: 'Produzione', value: 'In asta, in serie o su disegno' },
+    { label: 'Misure', value: 'Su richiesta' },
+    { label: 'Finiture', value: 'Su richiesta' },
+    { label: 'Certificazione', value: 'FSC® disponibile su richiesta' },
+  ]
+  for (const row of extra) {
+    const i = rows.findIndex(r => r.label.toLowerCase() === row.label.toLowerCase())
+    if (i >= 0) rows[i] = row
+    else rows.push(row)
+  }
+  return rows
+}
 
 export const essences = ['Abete', 'Pino', 'Larice', 'Meranti', 'Okumè', 'Rovere', 'Frassino']
 
 export const otherProducts = [
-  'Coprifili',
   'Copri alluminio',
   'Piattine',
   'Masselli per porte',

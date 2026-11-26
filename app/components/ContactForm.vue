@@ -2,6 +2,7 @@
 const route = useRoute()
 
 const initialProduct = familyBySlug(String(route.query.prodotto ?? ''))?.name ?? ''
+const detail = String(route.query.dettaglio ?? '')
 
 const form = reactive({
   name: '',
@@ -10,7 +11,7 @@ const form = reactive({
   phone: '',
   product: initialProduct,
   essence: '',
-  message: '',
+  message: detail ? `Richiesta per: ${detail}\n` : '',
   privacy: false,
   website: '',
 })

@@ -6,6 +6,7 @@ if (!family) {
   throw createError({ statusCode: 404, statusMessage: 'Prodotto non trovato', fatal: true })
 }
 
+const openChild = ref<FamilyChild | null>(null)
 const path = `/prodotti/${family.slug}`
 const related = families.filter(f => f.slug !== family.slug).slice(0, 3)
 
@@ -29,11 +30,8 @@ const SHAPES: Record<string, 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetr
   'profili-per-quadri': 'cornice',
   'boiserie': 'cornice',
   'battiscopa': 'battiscopa',
-  'corrimano': 'corrimano',
-  'fermavetri': 'fermavetro',
   'profili-per-serramenti': 'fermavetro',
-  'angolari': 'angolare',
-  'profili-tondi': 'tondo',
+  'profili-di-finitura': 'angolare',
 }
 </script>
 
@@ -64,24 +62,7 @@ const SHAPES: Record<string, 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetr
             <p v-for="p in family.body" :key="p">{{ p }}</p>
           </div>
 
-          <h2 class="display mt-10 text-[32px]">Scheda tecnica</h2>
-          <dl class="mt-3 border-t-2 border-ink font-mono text-[13px]">
-            <div class="grid grid-cols-[110px_1fr] gap-4 border-b border-line py-3">
-              <dt class="uppercase tracking-[.1em] text-muted">Essenze</dt><dd class="text-ink">Qualsiasi essenza di legno</dd>
-            </div>
-            <div class="grid grid-cols-[110px_1fr] gap-4 border-b border-line py-3">
-              <dt class="uppercase tracking-[.1em] text-muted">Produzione</dt><dd class="text-ink">In asta, in serie o su disegno</dd>
-            </div>
-            <div class="grid grid-cols-[110px_1fr] gap-4 border-b border-line py-3">
-              <dt class="uppercase tracking-[.1em] text-muted">Misure</dt><dd class="text-ink">Su richiesta</dd>
-            </div>
-            <div class="grid grid-cols-[110px_1fr] gap-4 border-b border-line py-3">
-              <dt class="uppercase tracking-[.1em] text-muted">Finiture</dt><dd class="text-ink">Su richiesta</dd>
-            </div>
-            <div class="grid grid-cols-[110px_1fr] gap-4 border-b border-line py-3">
-              <dt class="uppercase tracking-[.1em] text-muted">Certificazione</dt><dd class="text-ink">FSC® disponibile su richiesta</dd>
-            </div>
-          </dl>
+          <SpecSheet class="mt-10" :rows="specSheet()" />
 
           <h2 class="display mt-10 text-[32px]">Applicazioni</h2>
           <ul class="mt-3 grid gap-2 text-[16px]">
@@ -93,6 +74,25 @@ const SHAPES: Record<string, 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetr
             <a :href="company.phoneHref" class="btn btn-secondary">☎ {{ company.phone }}</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section v-if="family.children?.length" class="section-pad bg-ink text-white">
+      <div class="wrap">
+        <p class="kicker !text-brand"><b>+</b> In questa categoria</p>
+        <h2 class="display mt-4 text-[clamp(2.4rem,5vw,4rem)] !text-white">Cosa comprende</h2>
+        <ul class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <li v-for="c in family.children" :key="c.slug">
+            <button type="button" class="group block h-full w-full border-2 border-white/20 bg-ink-2 text-left transition hover:border-brand" @click="openChild = c">
+              <NuxtImg format="webp" :src="c.image" :alt="`${c.name} in legno`" width="700" height="467" loading="lazy" class="aspect-[3/2] w-full object-cover" />
+              <div class="p-5">
+                <h3 class="display text-[30px] !text-white transition group-hover:text-brand">{{ c.name }}</h3>
+                <p class="mt-2 text-[15px] leading-relaxed text-white/75">{{ c.text }}</p>
+                <span class="mt-4 inline-block font-mono text-[12px] font-medium uppercase tracking-[.12em] text-brand">Apri scheda tecnica +</span>
+              </div>
+            </button>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -109,6 +109,7 @@ const SHAPES: Record<string, 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetr
         </ul>
       </div>
     </section>
+    <ChildModal :family="family" :child="openChild" @close="openChild = null" />
     <HomeContactCta />
   </div>
 </template>
