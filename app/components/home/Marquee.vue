@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const words = families.map(f => f.name)
+const { families } = useContent()
+const words = computed(() => families.value.map(f => f.name))
 </script>
 
 <template>

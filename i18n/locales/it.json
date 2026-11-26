@@ -1,0 +1,442 @@
+{
+ "top": {
+  "loc": "{city} ({prov}) · Dal {year}",
+  "short": "Profili in legno dal {year}"
+ },
+ "nav": {
+  "products": "Prodotti",
+  "custom": "Su misura",
+  "company": "Azienda",
+  "certs": "Certificazioni",
+  "contacts": "Contatti",
+  "quote": "Preventivo",
+  "open": "Apri menu",
+  "close": "Chiudi menu",
+  "lang": "Lingua",
+  "skip": "Vai al contenuto",
+  "homeAria": "G.P.E. Rizzolo - Home"
+ },
+ "bar": {
+  "call": "Chiama",
+  "quote": "Preventivo"
+ },
+ "footer": {
+  "desc": "Profili in legno di qualità dal {year}. Profilatura in asta, in qualsiasi essenza, su disegno o campione.",
+  "follow": "Seguici",
+  "explore": "Esplora",
+  "products": "Prodotti",
+  "all": "Tutti i prodotti →",
+  "contacts": "Contatti",
+  "privacy": "Privacy",
+  "vat": "P.IVA {vat}"
+ },
+ "social": {
+  "aria": "{name} di {company}"
+ },
+ "crumb": {
+  "home": "Home"
+ },
+ "hero": {
+  "kicker": "Produttore · {city} ({prov})",
+  "h1a": "Profili",
+  "h1b": "in legno",
+  "h1hl": "su misura",
+  "essence": "qualsiasi essenza",
+  "p": "Profilatura in asta in {essence}, dal {year}. Profili per quadri, battiscopa, serramenti, corrimano e pezzi speciali: in serie o su vostro disegno.",
+  "cta": "Richiedi preventivo",
+  "products": "Prodotti",
+  "alt": "Blocchetti di legno massello in fila",
+  "fig": "Fig. 01 — Massello",
+  "section": "Sezione · profilo per cornici",
+  "since": "Dal"
+ },
+ "draw": {
+  "aria": "Sezione tecnica di un profilo"
+ },
+ "trust": {
+  "1": "Anno di fondazione",
+  "2v": "Tutte",
+  "2": "Le essenze di legno",
+  "3v": "Su misura",
+  "3": "Su disegno o campione",
+  "4": "Prodotti certificati su richiesta"
+ },
+ "fam": {
+  "kicker": "Prodotti",
+  "t1": "Ogni profilo,",
+  "t2": "una sezione.",
+  "sub": "{n} famiglie di prodotto, tutte realizzabili nell’essenza e nella sezione che serve al tuo progetto.",
+  "fig": "Fig.",
+  "go": "Vai alla scheda →"
+ },
+ "mat": {
+  "kicker": "La materia prima",
+  "t1": "Qualsiasi",
+  "t2": "essenza.",
+  "p": "Dalla scelta del legno alla profilatura: lavoriamo l’essenza che serve al tuo progetto, con attenzione a precisione e qualità della finitura.",
+  "note": "Alcune tipologie. Altre essenze su richiesta.",
+  "alt": "Alcune tipologie di legno: abete, pino, larice, meranti, okumè, rovere, frassino"
+ },
+ "essence": {
+  "1": "Abete",
+  "2": "Pino",
+  "3": "Larice",
+  "4": "Meranti",
+  "5": "Okumè",
+  "6": "Rovere",
+  "7": "Frassino"
+ },
+ "cus": {
+  "kicker": "Su misura",
+  "t1": "Hai un disegno.",
+  "t2": "Noi gli diamo forma.",
+  "p": "Non tutti i progetti entrano in un catalogo. Ascoltiamo l’esigenza, valutiamo il profilo e troviamo la soluzione più adatta: da un disegno, da un campione o da una semplice idea.",
+  "draw": "Il tuo disegno · sezione A–B",
+  "shape": "→ Il pezzo prende forma",
+  "fig": "Fig. — Dal disegno al pezzo",
+  "cta": "Parliamo del tuo progetto →"
+ },
+ "step": {
+  "1t": "Ci racconti l'idea",
+  "1": "Disegno, campione o esigenza produttiva.",
+  "2t": "Valutiamo insieme",
+  "2": "Confronto tecnico e definizione della richiesta.",
+  "3t": "Prende forma",
+  "3": "Una soluzione pensata per il tuo progetto."
+ },
+ "about": {
+  "kicker": "L’azienda",
+  "sub": "Nobile arte che attraversa tre generazioni",
+  "h": "La tradizione non è restare fermi. È sapere come andare avanti.",
+  "asta": "profilatura in asta",
+  "p1": "Da oltre sessant’anni il legno è il nostro mestiere. La nostra attività principale è la {asta}, con grande attenzione alla precisione e alla qualità della finitura, su qualsiasi essenza di legno.",
+  "p2": "Produciamo coprifili, fermavetri, copri alluminio, piattine, masselli per porte, angolari, zoccolini, perlinati e profili su misura.",
+  "p3": "Saldi alla filosofia del passato, con un occhio attento alle innovazioni tecnologiche e al futuro: ogni nostro prodotto ha un solo obiettivo, la soddisfazione del cliente.",
+  "btn": "Scopri la nostra storia →",
+  "card1": "Il mestiere, in sezione",
+  "card2a": "Precisione",
+  "card2b": "tramandata.",
+  "partners": "I soci"
+ },
+ "fact": {
+  "1": "Generazioni in azienda",
+  "2": "Valori tramandati",
+  "3": "Obiettivo: la soddisfazione del cliente"
+ },
+ "cert": {
+  "kicker": "Certificazioni",
+  "t1": "Legno",
+  "t2": "responsabile.",
+  "p": "Prodotti certificati FSC® disponibili su richiesta. Impegno etico e politica ambientale sono consultabili sul {link}.",
+  "link": "sito aziendale",
+  "fsc": "Prodotti certificati FSC® disponibili su richiesta.",
+  "iso": "Sistema di gestione ambientale, certificato con accreditamento UKAS.",
+  "fscAlt": "Certificato FSC G.P.E. Rizzolo",
+  "isoAlt": "Certificato ISO 14001 G.P.E. Rizzolo"
+ },
+ "cta": {
+  "kicker": "Il prossimo passo",
+  "t1": "Parliamo del tuo",
+  "t2": "prossimo progetto.",
+  "p": "Raccontaci cosa ti serve: profilo, essenza, quantità. Ti rispondiamo il prima possibile.",
+  "btn": "Richiedi preventivo →"
+ },
+ "form": {
+  "name": "Nome e cognome *",
+  "company": "Azienda",
+  "email": "Email *",
+  "phone": "Telefono",
+  "product": "Prodotto di interesse",
+  "select": "Seleziona…",
+  "other": "Altro / su disegno",
+  "essence": "Essenza di legno",
+  "essencePh": "es. rovere, abete…",
+  "message": "Descrivi la tua richiesta *",
+  "messagePh": "Sezione, lunghezza, quantità, finitura… Puoi anche rispondere alla nostra email con un disegno o una foto.",
+  "privacy": "Ho letto l’{link} e acconsento al trattamento dei dati per rispondere alla richiesta. *",
+  "privacyLink": "informativa privacy",
+  "send": "Invia richiesta ↗",
+  "sending": "Invio in corso…",
+  "sentTitle": "Richiesta inviata",
+  "sentText": "Grazie {name}, abbiamo ricevuto la tua richiesta e ti risponderemo il prima possibile.",
+  "errValid": "Compila nome, email valida e messaggio.",
+  "errUnavail": "Invio non disponibile al momento. Scrivici a {email}.",
+  "errGeneric": "Invio non riuscito. Riprova o scrivici a {email}.",
+  "prefill": "Richiesta per: {detail}"
+ },
+ "spec": {
+  "title": "Scheda tecnica",
+  "essences": "Essenze",
+  "essencesV": "Qualsiasi essenza di legno",
+  "production": "Produzione",
+  "productionV": "In asta, in serie o su disegno",
+  "sizes": "Misure",
+  "finishes": "Finiture",
+  "onRequest": "Su richiesta",
+  "cert": "Certificazione",
+  "certV": "FSC® disponibile su richiesta"
+ },
+ "modal": {
+  "title": "Scheda tecnica {name}",
+  "close": "Chiudi",
+  "pdf": "Scheda PDF ↓"
+ },
+ "prod": {
+  "alt": "{name} in legno - G.P.E. Rizzolo",
+  "uses": "Applicazioni",
+  "related": "Altri prodotti",
+  "inCat": "In questa categoria",
+  "includes": "Cosa comprende",
+  "open": "Apri scheda tecnica +",
+  "notFound": "Prodotto non trovato"
+ },
+ "prods": {
+  "title": "I nostri profili in legno",
+  "intro": "La profilatura in asta è la nostra attività principale. Lavoriamo qualsiasi essenza di legno, in serie o su disegno.",
+  "also": "Produciamo anche: {list}. {link} per la tua richiesta.",
+  "contact": "Contattaci"
+ },
+ "contact": {
+  "title": "Richiedi un preventivo",
+  "intro": "Raccontaci cosa ti serve: profilo, essenza, quantità. Se hai un disegno o un campione, mandacelo e valutiamo insieme.",
+  "maps": "Apri su Google Maps ↗"
+ },
+ "seo": {
+  "home": {
+   "title": "G.P.E. Rizzolo {'|'} Profili in legno su misura dal 1960",
+   "desc": "Produzione di profili in legno su misura a Santa Giustina in Colle (PD): profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960."
+  },
+  "prods": {
+   "title": "Profili in legno: tutti i prodotti",
+   "desc": "Battiscopa, profili per quadri, serramenti, perlinati, saune, semilavorati, profili di finitura e boiserie: produzione su misura G.P.E. Rizzolo."
+  },
+  "contact": {
+   "title": "Contatti e richiesta preventivo",
+   "desc": "Richiedi un preventivo per profili in legno su misura. G.P.E. Rizzolo, {address}. Tel. {phone}."
+  },
+  "company": {
+   "title": "L’azienda: storia, valori e obiettivi",
+   "desc": "G.P.E. Rizzolo produce profili in legno dal 1960 a Santa Giustina in Colle (PD). Tre generazioni di esperienza, valori e obiettivi: qualità, serietà e soddisfazione del cliente."
+  },
+  "certs": {
+   "title": "Certificazioni FSC® e ISO 14001",
+   "desc": "G.P.E. Rizzolo è certificata FSC® (C184281) e ISO 14001:2015 (UKAS). Prodotti in legno certificati FSC® disponibili su richiesta."
+  },
+  "privacy": {
+   "title": "Informativa privacy",
+   "desc": "Informativa sul trattamento dei dati personali raccolti tramite il sito di G.P.E. Rizzolo."
+  }
+ },
+ "page": {
+  "company": "Tre generazioni di legno",
+  "companyIntro": "Nobile arte che attraversa tre generazioni: dal 1960 profili in legno di qualità, su misura."
+ },
+ "hist": {
+  "kicker": "La nostra storia",
+  "t1": "Dal 1960,",
+  "t2": "di padre in figlio.",
+  "p": "Passione, esperienza, qualità, serietà, puntualità e dedizione sono i sei punti cardine tramandati da papà Guerrino ai figli Paolo ed Elio e oggi al nipote Samuel, su cui G.P.E. Rizzolo si fonda.",
+  "1l": "1960",
+  "1t": "Nasce G.P.E. Rizzolo",
+  "1": "Inizia a Santa Giustina in Colle la produzione di profili in legno.",
+  "2l": "Prima generazione",
+  "2t": "Guerrino",
+  "2": "Il mestiere e i suoi valori vengono tramandati di padre in figlio.",
+  "3l": "Seconda generazione",
+  "3t": "Paolo ed Elio",
+  "3": "I figli portano avanti l’azienda, tra filosofia del passato e innovazione.",
+  "4l": "Oggi",
+  "4t": "I nipoti",
+  "4": "Con i nipoti entra la terza generazione: tradizione e sguardo al futuro."
+ },
+ "values": {
+  "kicker": "I nostri valori",
+  "t": "Sei punti cardine."
+ },
+ "value": {
+  "1": "Passione",
+  "1t": "Il legno è il nostro mestiere da oltre sessant’anni, e si vede nei dettagli.",
+  "2": "Esperienza",
+  "2t": "Tre generazioni di competenza nella profilatura in asta.",
+  "3": "Qualità",
+  "3t": "Precisione e accuratezza delle finiture, su qualsiasi essenza.",
+  "4": "Serietà",
+  "4t": "Ascoltiamo, ci impegniamo e manteniamo quello che promettiamo.",
+  "5": "Puntualità",
+  "5t": "Rispettiamo i tempi concordati, perché i vostri tempi sono i nostri.",
+  "6": "Dedizione",
+  "6t": "Ogni richiesta, standard o su disegno, riceve la stessa cura."
+ },
+ "goals": {
+  "kicker": "I nostri obiettivi",
+  "t1": "Guardiamo avanti,",
+  "t2": "senza perdere il passato."
+ },
+ "goal": {
+  "1": "Soddisfazione del cliente",
+  "1t": "Ogni prodotto nasce con un solo obiettivo: soddisfare chi lo ordina.",
+  "2": "Tradizione e innovazione",
+  "2t": "Restiamo saldi alla filosofia del passato, con un occhio attento alle innovazioni tecnologiche e al futuro.",
+  "3": "Su misura come standard",
+  "3t": "Trasformare disegni, campioni e idee in profili precisi, in qualsiasi essenza di legno.",
+  "4": "Legno responsabile",
+  "4t": "Lavorare nel rispetto dell’ambiente, con prodotti certificati FSC® disponibili su richiesta."
+ },
+ "brochure": {
+  "kicker": "Documentazione",
+  "t": "Scarica la nostra brochure.",
+  "p": "La presentazione completa di G.P.E. Rizzolo e dei suoi profili, in italiano e in inglese.",
+  "it": "Brochure aziendale (italiano)",
+  "en": "Company brochure (English)"
+ },
+ "privacy": {
+  "controller": "Titolare del trattamento:",
+  "controllerText": "{name}, {address}, P.IVA {vat}, email {email}.",
+  "data": "Dati raccolti:",
+  "dataText": "attraverso il modulo di richiesta preventivo raccogliamo nome, azienda, email, telefono e il contenuto del messaggio.",
+  "purpose": "Finalità e base giuridica:",
+  "purposeText": "rispondere alle richieste inviate dall’utente (art. 6.1.b GDPR, misure precontrattuali).",
+  "retention": "Conservazione:",
+  "retentionText": "i dati sono conservati per il tempo necessario a gestire la richiesta e gli eventuali rapporti commerciali conseguenti.",
+  "rights": "Diritti:",
+  "rightsText": "l’utente può chiedere accesso, rettifica, cancellazione, limitazione e opposizione scrivendo a {email}, e può proporre reclamo al Garante per la protezione dei dati personali.",
+  "cookies": "Cookie:",
+  "cookiesText": "questo sito utilizza solo cookie tecnici e non installa strumenti di profilazione o analitici."
+ },
+ "other": {
+  "1": "Copri alluminio",
+  "2": "Piattine",
+  "3": "Masselli per porte",
+  "4": "Colorazioni"
+ },
+ "lang": {
+  "it": "Italiano"
+ },
+ "families": {
+  "battiscopa": {
+   "name": "Battiscopa",
+   "seoTitle": "Battiscopa in legno",
+   "seoDescription": "Battiscopa e zoccolini in legno su misura: al naturale, laccati o tinti, in diverse essenze e sezioni. Produzione G.P.E. Rizzolo, Padova.",
+   "intro": "Zoccolini in legno al naturale, laccati o tinti, in varie sezioni.",
+   "body1": "I nostri battiscopa in legno sono disponibili in diverse sezioni e sagome, al naturale oppure colorati: bianchi, tinti noce o con finiture personalizzate.",
+   "body2": "Forniamo rivenditori, falegnamerie, imprese e progettisti, anche con quantità e misure dedicate.",
+   "use1": "Pavimenti in parquet e laminato",
+   "use2": "Ristrutturazioni e nuove costruzioni",
+   "use3": "Rivenditori e falegnamerie",
+   "use4": "Finiture colorate su richiesta"
+  },
+  "profili-per-quadri": {
+   "name": "Profili per quadri",
+   "seoTitle": "Profili in legno per cornici e quadri",
+   "seoDescription": "Profili in legno per cornici e quadri prodotti a Santa Giustina in Colle (PD): varie sezioni e finiture, in qualsiasi essenza, anche su disegno.",
+   "intro": "Profili in asta per cornici e incorniciatura, in diverse sezioni e finiture.",
+   "body1": "Produciamo profili in legno per cornici e quadri destinati a laboratori di incorniciatura, aziende e progettisti. Le sezioni vanno dal profilo semplice alla modanatura più elaborata, in asta, pronti per essere tagliati e assemblati.",
+   "body2": "Lavoriamo qualsiasi essenza di legno e possiamo sviluppare una sagoma nuova partendo da un vostro disegno o da un campione.",
+   "use1": "Cornici per quadri e specchi",
+   "use2": "Laboratori di incorniciatura",
+   "use3": "Arredo e decorazione",
+   "use4": "Sagome personalizzate su disegno"
+  },
+  "profili-per-serramenti": {
+   "name": "Profili per serramenti",
+   "seoTitle": "Profili in legno per serramenti",
+   "seoDescription": "Profili in legno per serramenti: fermavetri, coprifili e componenti per infissi, su misura in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).",
+   "intro": "Fermavetri, coprifili e profili per infissi, con attenzione a dimensioni e finitura.",
+   "body1": "Produciamo profili in legno per serramenti, in dimensioni e finiture concordate con il cliente. La profilatura in asta è la nostra attività principale e viene eseguita con grande attenzione alla precisione.",
+   "body2": "Nella categoria rientrano fermavetri e coprifili, in diverse sagome e essenze.",
+   "use1": "Produttori di serramenti",
+   "use2": "Falegnamerie",
+   "use3": "Componenti per infissi",
+   "use4": "Serie e pezzi su misura"
+  },
+  "perlinati": {
+   "name": "Perlinati",
+   "seoTitle": "Perlinati, frangisole e masselli piallati in legno",
+   "seoDescription": "Perlinati, profili per frangisole e masselli piallati in legno, per rivestimenti e interni. Produzione G.P.E. Rizzolo, Padova.",
+   "intro": "Perlinati e tavole a incastro, frangisole e masselli piallati.",
+   "body1": "Produciamo perlinati e tavole a incastro in legno, adatti a rivestimenti interni di pareti e soffitti.",
+   "body2": "Nella categoria rientrano anche i profili per frangisole e i masselli piallati, in diverse essenze e misure.",
+   "use1": "Rivestimenti di pareti",
+   "use2": "Soffitti in legno",
+   "use3": "Frangisole e rivestimenti esterni",
+   "use4": "Falegnameria e carpenteria"
+  },
+  "profili-per-saune": {
+   "name": "Profili per saune",
+   "seoTitle": "Profili in legno per saune",
+   "seoDescription": "Profili in legno per saune: produzione su misura in diverse essenze e sezioni. G.P.E. Rizzolo, Santa Giustina in Colle (PD).",
+   "intro": "Profili in legno per la realizzazione e la finitura di saune.",
+   "body1": "Produciamo profili in legno per saune, nell’essenza e nella sezione richieste dal progetto.",
+   "body2": "Contattaci per descriverci il tuo progetto: valutiamo insieme la soluzione più adatta.",
+   "use1": "Costruttori di saune",
+   "use2": "Rivestimenti e finiture",
+   "use3": "Sezioni su disegno"
+  },
+  "semilavorati": {
+   "name": "Semilavorati",
+   "seoTitle": "Semilavorati in legno",
+   "seoDescription": "Semilavorati in legno di varie sezioni e lunghezze, in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).",
+   "intro": "Semilavorati in legno di varie sezioni, in qualsiasi essenza.",
+   "body1": "Forniamo semilavorati in legno in diverse sezioni e lunghezze, pronti per le lavorazioni successive.",
+   "body2": "Possiamo preparare le misure e le essenze richieste dal vostro ciclo produttivo.",
+   "use1": "Falegnamerie e industrie del legno",
+   "use2": "Masselli per porte",
+   "use3": "Piattine e listelli",
+   "use4": "Sezioni su misura"
+  },
+  "profili-di-finitura": {
+   "name": "Profili di finitura",
+   "seoTitle": "Profili di finitura in legno: tondi, angolari, corrimano",
+   "seoDescription": "Profili di finitura in legno: profili tondi, angolari e corrimano in diverse essenze e finiture. G.P.E. Rizzolo, produzione su misura a Padova.",
+   "intro": "Profili tondi, angolari e corrimano in diverse essenze e finiture.",
+   "body1": "Realizziamo profili di finitura in legno per completare arredi, scale e interni: profili tondi, angolari e corrimano.",
+   "body2": "Ogni profilo può essere prodotto nell’essenza, nella sezione e nella tinta richieste.",
+   "use1": "Scale e balaustre",
+   "use2": "Protezione degli spigoli",
+   "use3": "Arredo e falegnameria",
+   "use4": "Colorazioni personalizzate"
+  },
+  "boiserie": {
+   "name": "Boiserie",
+   "seoTitle": "Boiserie e cornici in legno",
+   "seoDescription": "Boiserie, cornici e modanature in legno per rivestimenti e soffitti, in diverse essenze e finiture. G.P.E. Rizzolo, profili in legno dal 1960.",
+   "intro": "Cornici e modanature in legno per rivestimenti, soffitti e interni.",
+   "body1": "Realizziamo boiserie, cornici e modanature in legno per dare carattere agli ambienti, dal dettaglio lineare alla decorazione più ricca.",
+   "body2": "Ogni profilo può essere prodotto nell’essenza e nella finitura richiesta.",
+   "use1": "Rivestimenti a parete",
+   "use2": "Cornici per soffitti",
+   "use3": "Interni residenziali e commerciali",
+   "use4": "Restauri"
+  }
+ },
+ "children": {
+  "fermavetri": {
+   "name": "Fermavetri",
+   "text": "Fermavetro in legno in molte sagome e sezioni, forniti in asta."
+  },
+  "coprifili": {
+   "name": "Coprifili",
+   "text": "Coprifili in legno per serramenti e infissi, in diverse sezioni."
+  },
+  "frangisole": {
+   "name": "Frangisole",
+   "text": "Profili per frangisole e rivestimenti esterni, in diverse sagome e finiture."
+  },
+  "masselli-piallati": {
+   "name": "Masselli piallati",
+   "text": "Masselli e listelli piallati di varie sezioni, in diverse essenze."
+  },
+  "profili-tondi": {
+   "name": "Profili tondi",
+   "text": "Tondini e profili torniti in legno, in varie misure e essenze."
+  },
+  "angolari": {
+   "name": "Angolari",
+   "text": "Angolari in legno in diverse essenze e tinte, al naturale o colorati."
+  },
+  "corrimano": {
+   "name": "Corrimano",
+   "text": "Corrimano in legno massello per scale e balaustre, dal chiaro naturale al noce scuro."
+  }
+ }
+}

@@ -1,0 +1,442 @@
+{
+ "top": {
+  "loc": "{city} ({prov}) · Since {year}",
+  "short": "Wood profiles since {year}"
+ },
+ "nav": {
+  "products": "Products",
+  "custom": "Made to measure",
+  "company": "Company",
+  "certs": "Certifications",
+  "contacts": "Contact",
+  "quote": "Quote",
+  "open": "Open menu",
+  "close": "Close menu",
+  "lang": "Language",
+  "skip": "Skip to content",
+  "homeAria": "G.P.E. Rizzolo - Home"
+ },
+ "bar": {
+  "call": "Call",
+  "quote": "Quote"
+ },
+ "footer": {
+  "desc": "Quality wood profiles since {year}. Profiling in lengths, in any wood, to your drawing or sample.",
+  "follow": "Follow us",
+  "explore": "Explore",
+  "products": "Products",
+  "all": "All products →",
+  "contacts": "Contact",
+  "privacy": "Privacy",
+  "vat": "VAT No. {vat}"
+ },
+ "social": {
+  "aria": "{company} on {name}"
+ },
+ "crumb": {
+  "home": "Home"
+ },
+ "hero": {
+  "kicker": "Manufacturer · {city} ({prov})",
+  "h1a": "Bespoke",
+  "h1b": "wood",
+  "h1hl": "profiles",
+  "essence": "any wood",
+  "p": "Profiling in lengths in {essence}, since {year}. Picture frame mouldings, skirting boards, window profiles, handrails and special pieces: in series or to your drawing.",
+  "cta": "Request a quote",
+  "products": "Products",
+  "alt": "Solid wood blocks in a row",
+  "fig": "Fig. 01 — Solid wood",
+  "section": "Section · frame moulding",
+  "since": "Since"
+ },
+ "draw": {
+  "aria": "Technical section of a profile"
+ },
+ "trust": {
+  "1": "Year founded",
+  "2v": "Any",
+  "2": "Wood species",
+  "3v": "Made to measure",
+  "3": "To drawing or sample",
+  "4": "Certified products on request"
+ },
+ "fam": {
+  "kicker": "Products",
+  "t1": "Every profile,",
+  "t2": "a section.",
+  "sub": "{n} product families, all available in the wood and section your project needs.",
+  "fig": "Fig.",
+  "go": "View product →"
+ },
+ "mat": {
+  "kicker": "The raw material",
+  "t1": "Any",
+  "t2": "wood.",
+  "p": "From choosing the wood to profiling: we work the wood your project needs, with attention to precision and finish quality.",
+  "note": "Some of our woods. Others on request.",
+  "alt": "Some wood types: fir, pine, larch, meranti, okoumé, oak, ash"
+ },
+ "essence": {
+  "1": "Fir",
+  "2": "Pine",
+  "3": "Larch",
+  "4": "Meranti",
+  "5": "Okoumé",
+  "6": "Oak",
+  "7": "Ash"
+ },
+ "cus": {
+  "kicker": "Made to measure",
+  "t1": "You have a drawing.",
+  "t2": "We give it shape.",
+  "p": "Not every project fits in a catalogue. We listen to your needs, assess the profile and find the most suitable solution: from a drawing, a sample or a simple idea.",
+  "draw": "Your drawing · section A–B",
+  "shape": "→ The piece takes shape",
+  "fig": "Fig. — From drawing to piece",
+  "cta": "Let’s talk about your project →"
+ },
+ "step": {
+  "1t": "You tell us your idea",
+  "1": "Drawing, sample or production need.",
+  "2t": "We assess together",
+  "2": "Technical discussion and definition of the request.",
+  "3t": "It takes shape",
+  "3": "A solution designed for your project."
+ },
+ "about": {
+  "kicker": "The company",
+  "sub": "A noble craft spanning three generations",
+  "h": "Tradition doesn’t mean standing still. It means knowing how to move forward.",
+  "asta": "profiling in lengths",
+  "p1": "For over sixty years wood has been our trade. Our core business is {asta}, with great attention to precision and finish quality, in any kind of wood.",
+  "p2": "We produce architraves, glazing beads, aluminium covers, flat strips, door blanks, angle profiles, skirting boards, tongue-and-groove boards and made-to-measure profiles.",
+  "p3": "Faithful to the philosophy of the past, with an eye on technological innovation and the future: every product we make has one goal, customer satisfaction.",
+  "btn": "Discover our story →",
+  "card1": "The craft, in section",
+  "card2a": "Precision",
+  "card2b": "handed down.",
+  "partners": "The partners"
+ },
+ "fact": {
+  "1": "Generations in the company",
+  "2": "Values handed down",
+  "3": "Goal: customer satisfaction"
+ },
+ "cert": {
+  "kicker": "Certifications",
+  "t1": "Responsible",
+  "t2": "wood.",
+  "p": "FSC®-certified products available on request. Our ethical commitment and environmental policy can be found on the {link}.",
+  "link": "company website",
+  "fsc": "FSC®-certified products available on request.",
+  "iso": "Environmental management system, certified under UKAS accreditation.",
+  "fscAlt": "G.P.E. Rizzolo FSC certificate",
+  "isoAlt": "G.P.E. Rizzolo ISO 14001 certificate"
+ },
+ "cta": {
+  "kicker": "The next step",
+  "t1": "Let’s talk about",
+  "t2": "your next project.",
+  "p": "Tell us what you need: profile, wood, quantity. We’ll reply as soon as possible.",
+  "btn": "Request a quote →"
+ },
+ "form": {
+  "name": "Full name *",
+  "company": "Company",
+  "email": "Email *",
+  "phone": "Phone",
+  "product": "Product of interest",
+  "select": "Select…",
+  "other": "Other / to drawing",
+  "essence": "Wood species",
+  "essencePh": "e.g. oak, fir…",
+  "message": "Describe your request *",
+  "messagePh": "Section, length, quantity, finish… You can also reply to our email with a drawing or a photo.",
+  "privacy": "I have read the {link} and consent to the processing of my data to answer my request. *",
+  "privacyLink": "privacy notice",
+  "send": "Send request ↗",
+  "sending": "Sending…",
+  "sentTitle": "Request sent",
+  "sentText": "Thank you {name}, we have received your request and will reply as soon as possible.",
+  "errValid": "Please fill in your name, a valid email and a message.",
+  "errUnavail": "Sending is currently unavailable. Please write to {email}.",
+  "errGeneric": "Sending failed. Try again or write to {email}.",
+  "prefill": "Request for: {detail}"
+ },
+ "spec": {
+  "title": "Technical sheet",
+  "essences": "Woods",
+  "essencesV": "Any wood species",
+  "production": "Production",
+  "productionV": "In lengths, in series or to drawing",
+  "sizes": "Sizes",
+  "finishes": "Finishes",
+  "onRequest": "On request",
+  "cert": "Certification",
+  "certV": "FSC® available on request"
+ },
+ "modal": {
+  "title": "Technical sheet {name}",
+  "close": "Close",
+  "pdf": "PDF sheet ↓"
+ },
+ "prod": {
+  "alt": "{name} in wood - G.P.E. Rizzolo",
+  "uses": "Applications",
+  "related": "Other products",
+  "inCat": "In this category",
+  "includes": "What it includes",
+  "open": "Open technical sheet +",
+  "notFound": "Product not found"
+ },
+ "prods": {
+  "title": "Our wooden profiles",
+  "intro": "Profiling in lengths is our core business. We work any kind of wood, in series or to your drawing.",
+  "also": "We also produce: {list}. {link} with your request.",
+  "contact": "Contact us"
+ },
+ "contact": {
+  "title": "Request a quote",
+  "intro": "Tell us what you need: profile, wood, quantity. If you have a drawing or a sample, send it to us and we will assess it together.",
+  "maps": "Open in Google Maps ↗"
+ },
+ "seo": {
+  "home": {
+   "title": "G.P.E. Rizzolo {'|'} Made-to-measure wood profiles since 1960",
+   "desc": "Made-to-measure wood profiles manufactured in Santa Giustina in Colle (Padua, Italy): picture frame mouldings, skirting boards, window profiles, handrails, wall panelling and special pieces. Since 1960."
+  },
+  "prods": {
+   "title": "Wooden profiles: all products",
+   "desc": "Skirting boards, picture frame mouldings, window profiles, tongue-and-groove boards, saunas, semi-finished products, finishing profiles and wall panelling: made-to-measure production by G.P.E. Rizzolo."
+  },
+  "contact": {
+   "title": "Contact and quote request",
+   "desc": "Request a quote for made-to-measure wood profiles. G.P.E. Rizzolo, {address}. Tel. {phone}."
+  },
+  "company": {
+   "title": "The company: history, values and goals",
+   "desc": "G.P.E. Rizzolo has produced wood profiles since 1960 in Santa Giustina in Colle (Padua). Three generations of experience, values and goals: quality, reliability and customer satisfaction."
+  },
+  "certs": {
+   "title": "FSC® and ISO 14001 certifications",
+   "desc": "G.P.E. Rizzolo is FSC® (C184281) and ISO 14001:2015 (UKAS) certified. FSC®-certified wood products available on request."
+  },
+  "privacy": {
+   "title": "Privacy notice",
+   "desc": "Information on the processing of personal data collected through the G.P.E. Rizzolo website."
+  }
+ },
+ "page": {
+  "company": "Three generations of wood",
+  "companyIntro": "A noble craft spanning three generations: quality wood profiles, made to measure, since 1960."
+ },
+ "hist": {
+  "kicker": "Our history",
+  "t1": "Since 1960,",
+  "t2": "from father to son.",
+  "p": "Passion, experience, quality, reliability, punctuality and dedication are the six cornerstones handed down by father Guerrino to his sons Paolo and Elio and today to his grandson Samuel, on which G.P.E. Rizzolo is built.",
+  "1l": "1960",
+  "1t": "G.P.E. Rizzolo is founded",
+  "1": "Production of wood profiles begins in Santa Giustina in Colle.",
+  "2l": "First generation",
+  "2t": "Guerrino",
+  "2": "The craft and its values are handed down from father to son.",
+  "3l": "Second generation",
+  "3t": "Paolo and Elio",
+  "3": "The sons carry the company forward, between the philosophy of the past and innovation.",
+  "4l": "Today",
+  "4t": "The grandchildren",
+  "4": "With the grandchildren the third generation arrives: tradition and a look to the future."
+ },
+ "values": {
+  "kicker": "Our values",
+  "t": "Six cornerstones."
+ },
+ "value": {
+  "1": "Passion",
+  "1t": "Wood has been our trade for over sixty years, and it shows in the details.",
+  "2": "Experience",
+  "2t": "Three generations of expertise in profiling lengths.",
+  "3": "Quality",
+  "3t": "Precision and accuracy of finishes, on any wood.",
+  "4": "Reliability",
+  "4t": "We listen, we commit and we keep our promises.",
+  "5": "Punctuality",
+  "5t": "We keep to agreed deadlines, because your deadlines are ours.",
+  "6": "Dedication",
+  "6t": "Every request, standard or to drawing, receives the same care."
+ },
+ "goals": {
+  "kicker": "Our goals",
+  "t1": "We look ahead,",
+  "t2": "without losing the past."
+ },
+ "goal": {
+  "1": "Customer satisfaction",
+  "1t": "Every product is made with one goal: to satisfy whoever orders it.",
+  "2": "Tradition and innovation",
+  "2t": "We remain faithful to the philosophy of the past, with an eye on technological innovation and the future.",
+  "3": "Made to measure as standard",
+  "3t": "Turning drawings, samples and ideas into precise profiles, in any kind of wood.",
+  "4": "Responsible wood",
+  "4t": "Working with respect for the environment, with FSC®-certified products available on request."
+ },
+ "brochure": {
+  "kicker": "Documentation",
+  "t": "Download our brochure.",
+  "p": "The complete presentation of G.P.E. Rizzolo and its profiles, in Italian and English.",
+  "it": "Company brochure (Italian)",
+  "en": "Company brochure (English)"
+ },
+ "privacy": {
+  "controller": "Data controller:",
+  "controllerText": "{name}, {address}, VAT No. {vat}, email {email}.",
+  "data": "Data collected:",
+  "dataText": "through the quote request form we collect name, company, email, phone number and the content of the message.",
+  "purpose": "Purpose and legal basis:",
+  "purposeText": "to reply to requests sent by the user (Art. 6(1)(b) GDPR, pre-contractual measures).",
+  "retention": "Retention:",
+  "retentionText": "data is kept for as long as necessary to handle the request and any resulting business relationship.",
+  "rights": "Rights:",
+  "rightsText": "users may request access, rectification, erasure, restriction and objection by writing to {email}, and may lodge a complaint with the Italian Data Protection Authority (Garante).",
+  "cookies": "Cookies:",
+  "cookiesText": "this website uses only technical cookies and does not install profiling or analytics tools."
+ },
+ "other": {
+  "1": "Aluminium covers",
+  "2": "Flat strips",
+  "3": "Door blanks",
+  "4": "Colours"
+ },
+ "lang": {
+  "it": "Italiano"
+ },
+ "families": {
+  "battiscopa": {
+   "name": "Skirting boards",
+   "seoTitle": "Wooden skirting boards",
+   "seoDescription": "Made-to-measure wooden skirting boards: natural, lacquered or stained, in different woods and profiles. Produced by G.P.E. Rizzolo, Padua, Italy.",
+   "intro": "Wooden skirting boards, natural, lacquered or stained, in a range of profiles.",
+   "body1": "Our wooden skirting boards come in different profiles and shapes, natural or coloured: white, walnut-stained or with custom finishes.",
+   "body2": "We supply retailers, joiners, building firms and designers, with quantities and sizes tailored to your needs.",
+   "use1": "Parquet and laminate floors",
+   "use2": "Renovations and new builds",
+   "use3": "Retailers and joiners",
+   "use4": "Coloured finishes on request"
+  },
+  "profili-per-quadri": {
+   "name": "Picture frame mouldings",
+   "seoTitle": "Wooden mouldings for picture frames",
+   "seoDescription": "Wooden mouldings for picture frames made in Santa Giustina in Colle (Padua): many profiles and finishes, in any wood, also to your drawing.",
+   "intro": "Lengths of moulding for picture frames and framing, in a range of profiles and finishes.",
+   "body1": "We produce wooden mouldings for picture frames, for framing workshops, companies and designers. Profiles range from simple sections to elaborate mouldings, supplied in lengths ready to be cut and assembled.",
+   "body2": "We work with any kind of wood and can develop a new profile from your drawing or sample.",
+   "use1": "Frames for pictures and mirrors",
+   "use2": "Framing workshops",
+   "use3": "Furnishing and decoration",
+   "use4": "Custom profiles from your drawing"
+  },
+  "profili-per-serramenti": {
+   "name": "Window & door profiles",
+   "seoTitle": "Wooden profiles for windows and doors",
+   "seoDescription": "Wooden profiles for windows and doors: glazing beads, architraves and components for frames, made to measure in any wood. G.P.E. Rizzolo, Santa Giustina in Colle (Padua).",
+   "intro": "Glazing beads, architraves and profiles for window frames, with attention to size and finish.",
+   "body1": "We produce wooden profiles for windows and doors, in sizes and finishes agreed with the customer. Profiling in lengths is our core business and is carried out with great attention to precision.",
+   "body2": "The category includes glazing beads and architraves, in different shapes and woods.",
+   "use1": "Window and door manufacturers",
+   "use2": "Joinery workshops",
+   "use3": "Components for window frames",
+   "use4": "Series and made-to-measure pieces"
+  },
+  "perlinati": {
+   "name": "Tongue-and-groove boards",
+   "seoTitle": "Tongue-and-groove boards, sunshades and planed solid timber",
+   "seoDescription": "Wooden tongue-and-groove boards, sunshade profiles and planed solid timber for cladding and interiors. Produced by G.P.E. Rizzolo, Padua.",
+   "intro": "Tongue-and-groove boards, sunshades and planed solid timber.",
+   "body1": "We produce tongue-and-groove wooden boards, suitable for interior wall and ceiling cladding.",
+   "body2": "The category also includes sunshade profiles and planed solid timber, in different woods and sizes.",
+   "use1": "Wall cladding",
+   "use2": "Wooden ceilings",
+   "use3": "Sunshades and exterior cladding",
+   "use4": "Joinery and carpentry"
+  },
+  "profili-per-saune": {
+   "name": "Sauna profiles",
+   "seoTitle": "Wooden profiles for saunas",
+   "seoDescription": "Wooden profiles for saunas: made to measure in different woods and sections. G.P.E. Rizzolo, Santa Giustina in Colle (Padua).",
+   "intro": "Wooden profiles for building and finishing saunas.",
+   "body1": "We produce wooden profiles for saunas, in the wood and section your project requires.",
+   "body2": "Get in touch and tell us about your project: together we will find the most suitable solution.",
+   "use1": "Sauna builders",
+   "use2": "Cladding and finishes",
+   "use3": "Sections to your drawing"
+  },
+  "semilavorati": {
+   "name": "Semi-finished products",
+   "seoTitle": "Semi-finished wood products",
+   "seoDescription": "Semi-finished wood products in various sections and lengths, in any wood. G.P.E. Rizzolo, Santa Giustina in Colle (Padua).",
+   "intro": "Semi-finished wood products in various sections, in any wood.",
+   "body1": "We supply semi-finished wood products in different sections and lengths, ready for further processing.",
+   "body2": "We can prepare the sizes and woods your production cycle requires.",
+   "use1": "Joinery and wood industries",
+   "use2": "Door blanks",
+   "use3": "Flat strips and battens",
+   "use4": "Custom sections"
+  },
+  "profili-di-finitura": {
+   "name": "Finishing profiles",
+   "seoTitle": "Wooden finishing profiles: round, angle and handrails",
+   "seoDescription": "Wooden finishing profiles: round profiles, angle profiles and handrails in different woods and finishes. G.P.E. Rizzolo, made-to-measure production in Padua.",
+   "intro": "Round profiles, angle profiles and handrails in different woods and finishes.",
+   "body1": "We make wooden finishing profiles to complete furniture, staircases and interiors: round profiles, angle profiles and handrails.",
+   "body2": "Every profile can be produced in the wood, section and colour you need.",
+   "use1": "Staircases and balustrades",
+   "use2": "Edge protection",
+   "use3": "Furniture and joinery",
+   "use4": "Custom colours"
+  },
+  "boiserie": {
+   "name": "Wall panelling",
+   "seoTitle": "Wooden wall panelling and mouldings",
+   "seoDescription": "Wooden wall panelling, cornices and mouldings for cladding and ceilings, in different woods and finishes. G.P.E. Rizzolo, wood profiles since 1960.",
+   "intro": "Wooden cornices and mouldings for wall cladding, ceilings and interiors.",
+   "body1": "We make wooden wall panelling, cornices and mouldings that give character to a room, from the simplest detail to the richest decoration.",
+   "body2": "Every profile can be produced in the wood and finish you require.",
+   "use1": "Wall panelling",
+   "use2": "Ceiling cornices",
+   "use3": "Residential and commercial interiors",
+   "use4": "Restoration"
+  }
+ },
+ "children": {
+  "fermavetri": {
+   "name": "Glazing beads",
+   "text": "Wooden glazing beads in many shapes and sections, supplied in lengths."
+  },
+  "coprifili": {
+   "name": "Architraves",
+   "text": "Wooden architraves for windows, doors and frames, in different sections."
+  },
+  "frangisole": {
+   "name": "Sunshades",
+   "text": "Profiles for sunshades and exterior cladding, in different shapes and finishes."
+  },
+  "masselli-piallati": {
+   "name": "Planed solid timber",
+   "text": "Planed solid timber and battens in various sections, in different woods."
+  },
+  "profili-tondi": {
+   "name": "Round profiles",
+   "text": "Wooden dowels and turned profiles, in various sizes and woods."
+  },
+  "angolari": {
+   "name": "Angle profiles",
+   "text": "Wooden angle profiles in different woods and colours, natural or coloured."
+  },
+  "corrimano": {
+   "name": "Handrails",
+   "text": "Solid wood handrails for staircases and balustrades, from light natural to dark walnut."
+  }
+ }
+}

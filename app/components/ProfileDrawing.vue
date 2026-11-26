@@ -24,7 +24,7 @@ const d = computed(() => paths[props.shape])
 </script>
 
 <template>
-  <svg viewBox="0 0 160 100" fill="none" role="img" :aria-label="label || `Sezione del profilo ${shape}`" class="w-full">
+  <svg viewBox="0 0 160 100" fill="none" role="img" :aria-label="label || $t('draw.aria')" class="w-full">
     <!-- Profilo -->
     <path :d="d" pathLength="1" class="draw" :stroke="stroke" stroke-width="1.6" stroke-linejoin="round" />
     <path v-if="shape === 'tondo'" d="M80 40 V88 M56 64 H104" pathLength="1" class="draw" :stroke="dim" stroke-width=".5" stroke-dasharray="2 1.5" />

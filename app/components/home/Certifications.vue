@@ -1,13 +1,16 @@
+<script setup lang="ts">
+const { certifications } = useContent()
+</script>
+
 <template>
   <section id="certificazioni" class="section-pad bg-sand">
     <div class="wrap grid items-start gap-10 lg:grid-cols-12 lg:gap-8">
       <div v-reveal class="lg:col-span-5">
-        <p class="kicker"><b>06</b> Certificazioni</p>
-        <h2 class="display mt-5 text-[clamp(3rem,6.5vw,5.5rem)]">Legno<br>responsabile.</h2>
-        <p class="mt-6 max-w-[440px] text-[17px] leading-[1.7]">
-          Prodotti certificati FSC® disponibili su richiesta. Impegno etico e politica ambientale sono consultabili sul
-          <a href="https://www.gperizzolo.it" class="font-bold text-brand-ink underline underline-offset-4" target="_blank" rel="noopener">sito aziendale</a>.
-        </p>
+        <p class="kicker"><b>06</b> {{ $t('cert.kicker') }}</p>
+        <h2 class="display mt-5 text-[clamp(3rem,6.5vw,5.5rem)]">{{ $t('cert.t1') }}<br>{{ $t('cert.t2') }}</h2>
+        <i18n-t keypath="cert.p" tag="p" class="mt-6 max-w-[440px] text-[17px] leading-[1.7]" scope="global">
+          <template #link><a href="https://www.gperizzolo.it" class="font-bold text-brand-ink underline underline-offset-4" target="_blank" rel="noopener">{{ $t('cert.link') }}</a></template>
+        </i18n-t>
       </div>
 
       <div class="grid grid-cols-2 gap-4 lg:col-span-7">

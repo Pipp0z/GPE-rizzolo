@@ -1,15 +1,16 @@
+<script setup lang="ts">
+const { steps } = useContent()
+</script>
+
 <template>
   <section id="su-misura" class="section-pad bg-brand text-ink">
     <div class="wrap">
       <div v-reveal class="grid items-end gap-8 lg:grid-cols-12">
         <div class="lg:col-span-8">
-          <p class="kicker !text-ink"><b class="!bg-ink !text-white">04</b> Su misura</p>
-          <h2 class="display mt-5 text-[clamp(3rem,8.5vw,8rem)] !text-ink">Hai un disegno.<br>Noi gli diamo forma.</h2>
+          <p class="kicker !text-ink"><b class="!bg-ink !text-white">04</b> {{ $t('cus.kicker') }}</p>
+          <h2 class="display mt-5 text-[clamp(3rem,8.5vw,8rem)] !text-ink">{{ $t('cus.t1') }}<br>{{ $t('cus.t2') }}</h2>
         </div>
-        <p class="text-[17px] leading-[1.65] lg:col-span-4">
-          Non tutti i progetti entrano in un catalogo. Ascoltiamo l’esigenza, valutiamo il profilo e troviamo
-          la soluzione più adatta: da un disegno, da un campione o da una semplice idea.
-        </p>
+        <p class="text-[17px] leading-[1.65] lg:col-span-4">{{ $t('cus.p') }}</p>
       </div>
 
       <div class="mt-14 grid gap-10 lg:grid-cols-12 lg:gap-8">
@@ -22,18 +23,18 @@
             </div>
           </li>
           <li class="border-t-2 border-ink pt-8">
-            <NuxtLink to="/contatti" class="btn !border-ink !bg-ink !text-white hover:!bg-white hover:!text-ink">Parliamo del tuo progetto →</NuxtLink>
+            <NuxtLinkLocale to="/contatti" class="btn !border-ink !bg-ink !text-white hover:!bg-white hover:!text-ink">{{ $t('cus.cta') }}</NuxtLinkLocale>
           </li>
         </ol>
 
         <div v-reveal class="lg:col-span-5">
           <div class="relative bg-paper p-3 shadow-[10px_10px_0_#16120e]">
             <div class="blueprint relative flex aspect-[4/3] flex-col justify-between border-2 border-ink bg-cream p-5">
-              <p class="font-mono text-[11px] uppercase tracking-[.12em] text-muted">Il tuo disegno · sezione A–B</p>
+              <p class="font-mono text-[11px] uppercase tracking-[.12em] text-muted">{{ $t('cus.draw') }}</p>
               <ProfileDrawing shape="modanatura" class="mx-auto w-[88%]" />
-              <p class="font-mono text-[11px] uppercase tracking-[.12em] text-brand-ink">→ Il pezzo prende forma</p>
+              <p class="font-mono text-[11px] uppercase tracking-[.12em] text-brand-ink">{{ $t('cus.shape') }}</p>
             </div>
-            <p class="mt-2 font-mono text-[11px] uppercase tracking-[.12em] text-muted">Fig. — Dal disegno al pezzo</p>
+            <p class="mt-2 font-mono text-[11px] uppercase tracking-[.12em] text-muted">{{ $t('cus.fig') }}</p>
           </div>
         </div>
       </div>

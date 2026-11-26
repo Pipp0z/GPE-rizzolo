@@ -9,7 +9,7 @@ withDefaults(defineProps<{ dark?: boolean }>(), { dark: false })
         :href="s.href"
         target="_blank"
         rel="noopener noreferrer"
-        :aria-label="`${s.name} di ${company.name}`"
+        :aria-label="$t('social.aria', { name: s.name, company: company.name })"
         :title="s.name"
         class="grid size-11 place-items-center border-2 transition hover:-translate-y-0.5 hover:border-brand hover:bg-brand hover:text-ink"
         :class="dark ? 'border-white/40 text-white' : 'border-ink text-ink'"

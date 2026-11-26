@@ -6,7 +6,7 @@ const baseURL = process.env.NUXT_APP_BASE_URL || '/'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxtjs/sitemap', '@nuxtjs/robots'],
+  modules: ['@nuxt/image', '@nuxt/fonts', '@nuxtjs/i18n', '@nuxtjs/sitemap', '@nuxtjs/robots'],
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()]
@@ -31,6 +31,19 @@ export default defineNuxtConfig({
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.gperizzolo.it'
     }
+  },
+
+  i18n: {
+    defaultLocale: 'it',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: false,
+    baseUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://www.gperizzolo.it',
+    locales: [
+      { code: 'it', language: 'it-IT', name: 'Italiano', file: 'it.json' },
+      { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
+      // { code: 'fr', language: 'fr-FR', name: 'Français', file: 'fr.json' },
+      // { code: 'de', language: 'de-DE', name: 'Deutsch', file: 'de.json' },
+    ],
   },
 
   sitemap: {

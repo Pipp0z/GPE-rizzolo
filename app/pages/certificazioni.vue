@@ -1,15 +1,17 @@
 <script setup lang="ts">
+const { t } = useI18n()
+
 usePageSeo({
-  title: 'Certificazioni FSC® e ISO 14001',
-  description: 'G.P.E. Rizzolo è certificata FSC® (C184281) e ISO 14001:2015 (UKAS). Prodotti in legno certificati FSC® disponibili su richiesta.',
+  title: t('seo.certs.title'),
+  description: t('seo.certs.desc'),
   path: '/certificazioni',
-  jsonLd: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Certificazioni', path: '/certificazioni' }])],
+  jsonLd: [breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.certs'), path: '/certificazioni' }])],
 })
 </script>
 
 <template>
   <div>
-    <PageHeader title="Certificazioni" :crumbs="[{ name: 'Certificazioni' }]" />
+    <PageHeader :title="$t('nav.certs')" :crumbs="[{ name: $t('nav.certs') }]" />
     <HomeCertifications />
     <HomeContactCta />
   </div>

@@ -1,9 +1,12 @@
 <script setup lang="ts">
+const { t } = useI18n()
+const address = `${company.address.street}, ${company.address.zip} ${company.address.city} (${company.address.province})`
+
 usePageSeo({
-  title: 'Contatti e richiesta preventivo',
-  description: `Richiedi un preventivo per profili in legno su misura. G.P.E. Rizzolo, ${company.address.street}, ${company.address.zip} ${company.address.city} (${company.address.province}). Tel. ${company.phone}.`,
+  title: t('seo.contact.title'),
+  description: t('seo.contact.desc', { address, phone: company.phone }),
   path: '/contatti',
-  jsonLd: [{ '@type': 'ContactPage', 'name': 'Contatti G.P.E. Rizzolo' }, breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Contatti', path: '/contatti' }])],
+  jsonLd: [{ '@type': 'ContactPage', 'name': `${company.name} - ${t('nav.contacts')}` }, breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.contacts'), path: '/contatti' }])],
 })
 
 const mapQuery = encodeURIComponent(`${company.address.street}, ${company.address.zip} ${company.address.city} ${company.address.province}`)
@@ -12,9 +15,9 @@ const mapQuery = encodeURIComponent(`${company.address.street}, ${company.addres
 <template>
   <div>
     <PageHeader
-      title="Richiedi un preventivo"
-      intro="Raccontaci cosa ti serve: profilo, essenza, quantità. Se hai un disegno o un campione, mandacelo e valutiamo insieme."
-      :crumbs="[{ name: 'Contatti' }]"
+      :title="$t('contact.title')"
+      :intro="$t('contact.intro')"
+      :crumbs="[{ name: $t('nav.contacts') }]"
     />
     <section class="section-pad bg-paper">
      <div class="wrap grid gap-12 lg:grid-cols-[1.3fr_.7fr] lg:gap-16">
@@ -26,7 +29,7 @@ const mapQuery = encodeURIComponent(`${company.address.street}, ${company.addres
           <address class="mt-3 not-italic text-muted">
             {{ company.address.street }}<br>
             {{ company.address.zip }} {{ company.address.city }} ({{ company.address.province }})<br>
-            P.IVA {{ company.vat }}
+            {{ $t('footer.vat', { vat: company.vat }) }}
           </address>
         </div>
         <ul class="space-y-2 font-semibold">
@@ -34,10 +37,10 @@ const mapQuery = encodeURIComponent(`${company.address.street}, ${company.addres
           <li><a :href="`mailto:${company.email}`" class="text-brand-ink hover:underline">✉ {{ company.email }}</a></li>
         </ul>
         <div>
-          <p class="mb-3 font-mono text-[12px] uppercase tracking-[.14em] text-muted">Seguici</p>
+          <p class="mb-3 font-mono text-[12px] uppercase tracking-[.14em] text-muted">{{ $t('footer.follow') }}</p>
           <SocialLinks />
         </div>
-        <a :href="`https://www.google.com/maps/search/?api=1&query=${mapQuery}`" target="_blank" rel="noopener" class="btn btn-secondary">Apri su Google Maps ↗</a>
+        <a :href="`https://www.google.com/maps/search/?api=1&query=${mapQuery}`" target="_blank" rel="noopener" class="btn btn-secondary">{{ $t('contact.maps') }}</a>
       </aside>
      </div>
     </section>

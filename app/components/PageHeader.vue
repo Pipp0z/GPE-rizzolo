@@ -16,10 +16,10 @@ defineProps<{
     </div>
     <section class="wrap relative px-[5.5%] pb-12 pt-10 md:pb-16 md:pt-14">
       <nav v-if="crumbs?.length" aria-label="Breadcrumb" class="mb-8 font-mono text-[12px] uppercase tracking-[.12em] text-white/60">
-        <NuxtLink to="/" class="hover:text-brand">Home</NuxtLink>
+        <NuxtLinkLocale to="/" class="hover:text-brand">{{ $t('crumb.home') }}</NuxtLinkLocale>
         <template v-for="c in crumbs" :key="c.name">
           <span class="mx-2">/</span>
-          <NuxtLink v-if="c.to" :to="c.to" class="hover:text-brand">{{ c.name }}</NuxtLink>
+          <NuxtLinkLocale v-if="c.to" :to="c.to" class="hover:text-brand">{{ c.name }}</NuxtLinkLocale>
           <span v-else aria-current="page" class="text-brand">{{ c.name }}</span>
         </template>
       </nav>

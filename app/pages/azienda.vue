@@ -1,18 +1,21 @@
 <script setup lang="ts">
+const { t } = useI18n()
+const { history, values, goals, brochures } = useContent()
+
 usePageSeo({
-  title: 'L’azienda: storia, valori e obiettivi',
-  description: 'G.P.E. Rizzolo produce profili in legno dal 1960 a Santa Giustina in Colle (PD). Tre generazioni di esperienza, valori e obiettivi: qualità, serietà e soddisfazione del cliente.',
+  title: t('seo.company.title'),
+  description: t('seo.company.desc'),
   path: '/azienda',
-  jsonLd: [breadcrumbLd([{ name: 'Home', path: '/' }, { name: 'Azienda', path: '/azienda' }])],
+  jsonLd: [breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.company'), path: '/azienda' }])],
 })
 </script>
 
 <template>
   <div>
     <PageHeader
-      title="Tre generazioni di legno"
-      intro="Nobile arte che attraversa tre generazioni: dal 1960 profili in legno di qualità, su misura."
-      :crumbs="[{ name: 'Azienda' }]"
+      :title="$t('page.company')"
+      :intro="$t('page.companyIntro')"
+      :crumbs="[{ name: $t('nav.company') }]"
     />
 
     <HomeAbout :show-heading="false" />
@@ -21,12 +24,9 @@ usePageSeo({
     <section id="storia" class="section-pad bg-sand">
       <div class="wrap">
         <div v-reveal>
-          <p class="kicker"><b>01</b> La nostra storia</p>
-          <h2 class="display mt-5 text-[clamp(3rem,7vw,6rem)]">Dal 1960,<br>di padre in figlio.</h2>
-          <p class="mt-6 max-w-[620px] text-[17px] leading-[1.75]">
-            Passione, esperienza, qualità, serietà, puntualità e dedizione sono i sei punti cardine tramandati da papà
-            Guerrino ai figli Paolo ed Elio e oggi al nipote Samuel, su cui G.P.E. Rizzolo si fonda.
-          </p>
+          <p class="kicker"><b>01</b> {{ $t('hist.kicker') }}</p>
+          <h2 class="display mt-5 text-[clamp(3rem,7vw,6rem)]">{{ $t('hist.t1') }}<br>{{ $t('hist.t2') }}</h2>
+          <p class="mt-6 max-w-[620px] text-[17px] leading-[1.75]">{{ $t('hist.p') }}</p>
         </div>
 
         <ol class="mt-14 grid gap-0 md:grid-cols-4">
@@ -44,8 +44,8 @@ usePageSeo({
     <section id="valori" class="section-pad bg-paper">
       <div class="wrap">
         <div v-reveal class="max-w-[760px]">
-          <p class="kicker"><b>02</b> I nostri valori</p>
-          <h2 class="display mt-5 text-[clamp(3rem,7vw,6rem)]">Sei punti cardine.</h2>
+          <p class="kicker"><b>02</b> {{ $t('values.kicker') }}</p>
+          <h2 class="display mt-5 text-[clamp(3rem,7vw,6rem)]">{{ $t('values.t') }}</h2>
         </div>
 
         <ul class="mt-12 grid gap-0 border-t-2 border-ink sm:grid-cols-2 lg:grid-cols-3">
@@ -62,8 +62,8 @@ usePageSeo({
     <section id="obiettivi" class="section-pad bg-brand text-ink">
       <div class="wrap">
         <div v-reveal class="max-w-[820px]">
-          <p class="kicker !text-ink"><b class="!bg-ink !text-white">03</b> I nostri obiettivi</p>
-          <h2 class="display mt-5 text-[clamp(3rem,8vw,7rem)] !text-ink">Guardiamo avanti,<br>senza perdere il passato.</h2>
+          <p class="kicker !text-ink"><b class="!bg-ink !text-white">03</b> {{ $t('goals.kicker') }}</p>
+          <h2 class="display mt-5 text-[clamp(3rem,8vw,7rem)] !text-ink">{{ $t('goals.t1') }}<br>{{ $t('goals.t2') }}</h2>
         </div>
 
         <ol class="mt-14 grid gap-0 md:grid-cols-2">
@@ -82,9 +82,9 @@ usePageSeo({
     <section class="section-pad bg-paper">
       <div class="wrap grid items-center gap-8 lg:grid-cols-12">
         <div v-reveal class="lg:col-span-7">
-          <p class="kicker"><b>04</b> Documentazione</p>
-          <h2 class="display mt-5 text-[clamp(2.6rem,5vw,4.5rem)]">Scarica la nostra brochure.</h2>
-          <p class="mt-4 max-w-[520px] text-[17px] leading-[1.7]">La presentazione completa di G.P.E. Rizzolo e dei suoi profili, in italiano e in inglese.</p>
+          <p class="kicker"><b>04</b> {{ $t('brochure.kicker') }}</p>
+          <h2 class="display mt-5 text-[clamp(2.6rem,5vw,4.5rem)]">{{ $t('brochure.t') }}</h2>
+          <p class="mt-4 max-w-[520px] text-[17px] leading-[1.7]">{{ $t('brochure.p') }}</p>
         </div>
         <div v-reveal class="flex flex-wrap gap-3 lg:col-span-5 lg:justify-end">
           <a v-for="b in brochures" :key="b.href" :href="b.href" target="_blank" rel="noopener" download class="btn btn-secondary">{{ b.label }} ↓</a>

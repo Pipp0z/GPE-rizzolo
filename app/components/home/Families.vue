@@ -1,6 +1,7 @@
 <script setup lang="ts">
-const activeSlug = ref(families[0]!.slug)
-const active = computed(() => families.find(f => f.slug === activeSlug.value)!)
+const { families } = useContent()
+const activeSlug = ref(families.value[0]!.slug)
+const active = computed(() => families.value.find(f => f.slug === activeSlug.value)!)
 const pad = (n: number) => String(n).padStart(2, '0')
 </script>
 
@@ -9,18 +10,18 @@ const pad = (n: number) => String(n).padStart(2, '0')
     <div class="wrap">
       <div v-reveal class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
-          <p class="kicker"><b>02</b> Prodotti</p>
-          <h2 class="display mt-5 text-[clamp(3rem,8vw,7rem)] ">Ogni profilo,<br>una sezione.</h2>
+          <p class="kicker"><b>02</b> {{ $t('fam.kicker') }}</p>
+          <h2 class="display mt-5 text-[clamp(3rem,8vw,7rem)] ">{{ $t('fam.t1') }}<br>{{ $t('fam.t2') }}</h2>
         </div>
         <p class="max-w-[360px] text-[16px] leading-relaxed text-[#3a332c]">
-          {{ families.length }} famiglie di prodotto, tutte realizzabili nell’essenza e nella sezione che serve al tuo progetto.
+          {{ $t('fam.sub', { n: families.length }) }}
         </p>
       </div>
 
       <div class="grid gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-14">
         <ul class="border-b-2 border-ink" @mouseleave="activeSlug = activeSlug">
           <li v-for="(f, i) in families" :key="f.slug" class="border-t-2 border-ink">
-            <NuxtLink
+            <NuxtLinkLocale
               :to="`/prodotti/${f.slug}`"
               class="group flex items-center gap-4 py-4 transition md:gap-6 md:py-5"
               @mouseenter="activeSlug = f.slug"
@@ -33,7 +34,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
               >{{ f.name }}</span>
               <NuxtImg format="webp" :src="f.image" alt="" width="96" height="64" loading="lazy" class="h-12 w-[72px] shrink-0 object-cover lg:hidden" />
               <span class="hidden font-mono text-xl text-muted transition group-hover:translate-x-1 group-hover:text-brand-ink lg:inline">→</span>
-            </NuxtLink>
+            </NuxtLinkLocale>
           </li>
         </ul>
 
@@ -52,16 +53,16 @@ const pad = (n: number) => String(n).padStart(2, '0')
                   :key="active.slug"
                   format="webp"
                   :src="active.image"
-                  :alt="`${active.name} in legno`"
+                  :alt="$t('prod.alt', { name: active.name })"
                   width="900"
                   height="1125"
                   class="absolute inset-0 size-full object-cover"
                 />
               </Transition>
-              <span class="absolute left-4 top-4 bg-brand px-2 py-1 font-mono text-[11px] font-medium uppercase tracking-[.12em] text-ink">Fig. {{ pad(families.indexOf(active) + 1) }}</span>
+              <span class="absolute left-4 top-4 bg-brand px-2 py-1 font-mono text-[11px] font-medium uppercase tracking-[.12em] text-ink">{{ $t('fam.fig') }} {{ pad(families.indexOf(active) + 1) }}</span>
               <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink via-ink/80 to-transparent p-6 pt-24">
                 <p class="text-[15px] leading-relaxed text-white/85">{{ active.intro }}</p>
-                <NuxtLink :to="`/prodotti/${active.slug}`" class="mt-3 inline-block font-mono text-[12px] font-medium uppercase tracking-[.12em] text-brand underline underline-offset-4">Vai alla scheda →</NuxtLink>
+                <NuxtLinkLocale :to="`/prodotti/${active.slug}`" class="mt-3 inline-block font-mono text-[12px] font-medium uppercase tracking-[.12em] text-brand underline underline-offset-4">{{ $t('fam.go') }}</NuxtLinkLocale>
               </div>
             </div>
           </div>

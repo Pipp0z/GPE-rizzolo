@@ -1,7 +1,14 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const siteUrl = useRuntimeConfig().public.siteUrl as string
 
+// html lang/dir, hreflang e canonical per ogni lingua
+const i18nHead = useLocaleHead({ dir: true, seo: true })
+
 useHead({
+  htmlAttrs: { lang: i18nHead.value.htmlAttrs?.lang },
+  link: [...(i18nHead.value.link ?? [])],
+  meta: [...(i18nHead.value.meta ?? [])],
   script: [{
     type: 'application/ld+json',
     innerHTML: JSON.stringify({
@@ -13,7 +20,7 @@ useHead({
       'url': siteUrl,
       'logo': `${siteUrl}${images.logo}`,
       'image': `${siteUrl}${images.hero}`,
-      'description': 'Produzione di profili in legno su misura: profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960.',
+      'description': t('seo.home.desc'),
       'foundingDate': String(company.since),
       'vatID': `IT${company.vat}`,
       'sameAs': socials.map(s => s.href),
@@ -35,7 +42,7 @@ useHead({
 <template>
   <div class="pb-[52px] md:pb-0">
     <NuxtRouteAnnouncer />
-    <a href="#contenuto" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-[70] focus:bg-white focus:p-3">Vai al contenuto</a>
+    <a href="#contenuto" class="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-[70] focus:bg-white focus:p-3">{{ $t('nav.skip') }}</a>
     <AppHeader />
     <main id="contenuto">
       <NuxtPage />

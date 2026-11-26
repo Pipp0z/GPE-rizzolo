@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{ family: Family, child: FamilyChild | null }>()
+const { specSheet } = useContent()
 const emit = defineEmits<{ close: [] }>()
 
 const dialog = ref<HTMLElement | null>(null)
@@ -36,22 +37,22 @@ onBeforeUnmount(() => {
           ref="dialog"
           role="dialog"
           aria-modal="true"
-          :aria-label="`Scheda tecnica ${child.name}`"
+          :aria-label="$t('modal.title', { name: child.name })"
           tabindex="-1"
           class="relative grid max-h-[calc(100vh-2rem)] w-full max-w-[1000px] overflow-auto border-2 border-ink bg-paper shadow-[12px_12px_0_#ee7623] outline-none md:grid-cols-[1fr_1.1fr]"
         >
-          <button class="absolute right-3 top-3 z-10 grid size-11 place-items-center border-2 border-ink bg-paper font-mono text-lg hover:bg-ink hover:text-white" aria-label="Chiudi" @click="emit('close')">✕</button>
+          <button class="absolute right-3 top-3 z-10 grid size-11 place-items-center border-2 border-ink bg-paper font-mono text-lg hover:bg-ink hover:text-white" :aria-label="$t('modal.close')" @click="emit('close')">✕</button>
 
           <div class="relative min-h-[240px] bg-cream md:min-h-[520px]">
-            <NuxtImg format="webp" :src="child.image" :alt="`${child.name} in legno - G.P.E. Rizzolo`" width="900" height="900" class="photo-ink absolute inset-0 size-full object-cover" />
+            <NuxtImg format="webp" :src="child.image" :alt="$t('prod.alt', { name: child.name })" width="900" height="900" class="photo-ink absolute inset-0 size-full object-cover" />
             <span class="absolute bottom-4 left-4 bg-ink px-2 py-1 font-mono text-[11px] uppercase tracking-[.12em] text-white">{{ family.name }}</span>
           </div>
 
           <div class="p-6 md:p-10">
-            <p class="kicker"><b>↗</b> Scheda tecnica</p>
+            <p class="kicker"><b>↗</b> {{ $t('spec.title') }}</p>
             <h2 class="display mt-3 text-[clamp(2.2rem,4vw,3.4rem)]">{{ child.name }}</h2>
             <div class="mt-4 space-y-3 text-[16px] leading-[1.7]">
-              <p v-for="p in (child.body ?? [child.text])" :key="p">{{ p }}</p>
+              <p>{{ child.text }}</p>
             </div>
 
             <dl class="mt-6 border-t-2 border-ink font-mono text-[13px]">
@@ -62,8 +63,8 @@ onBeforeUnmount(() => {
             </dl>
 
             <div class="mt-7 flex flex-wrap gap-3">
-              <NuxtLink :to="{ path: '/contatti', query: { prodotto: family.slug, dettaglio: child.name } }" class="btn" @click="emit('close')">Richiedi preventivo →</NuxtLink>
-              <a v-if="child.pdf" :href="child.pdf" target="_blank" rel="noopener" download class="btn btn-secondary">Scheda PDF ↓</a>
+              <NuxtLinkLocale :to="{ path: '/contatti', query: { prodotto: family.slug, dettaglio: child.name } }" class="btn" @click="emit('close')">{{ $t('cta.btn') }}</NuxtLinkLocale>
+              <a v-if="child.pdf" :href="child.pdf" target="_blank" rel="noopener" download class="btn btn-secondary">{{ $t('modal.pdf') }}</a>
             </div>
           </div>
         </div>

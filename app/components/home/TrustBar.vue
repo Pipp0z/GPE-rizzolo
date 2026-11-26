@@ -1,10 +1,11 @@
 <script setup lang="ts">
-const items = [
-  { big: String(company.since), text: 'Anno di fondazione' },
-  { big: 'Tutte', text: 'Le essenze di legno' },
-  { big: 'Su misura', text: 'Su disegno o campione' },
-  { big: 'FSC®', text: 'Prodotti certificati su richiesta' },
-]
+const { t } = useI18n()
+const items = computed(() => [
+  { big: String(company.since), text: t('trust.1') },
+  { big: t('trust.2v'), text: t('trust.2') },
+  { big: t('trust.3v'), text: t('trust.3') },
+  { big: 'FSC®', text: t('trust.4') },
+])
 </script>
 
 <template>
