@@ -38,10 +38,10 @@ a('hero.h1a', 'Profili', 'Bespoke', 'Profils', 'Holzprofile')
 a('hero.h1b', 'in legno', 'wood', 'en bois', '')
 a('hero.h1hl', 'su misura', 'profiles', 'sur mesure', 'nach Maß')
 a('hero.essence', 'qualsiasi essenza', 'any wood', 'toutes les essences', 'jeder Holzart')
-a('hero.p', 'Profilatura in asta in {essence}, dal {year}. Profili per quadri, battiscopa, serramenti, corrimano e pezzi speciali: in serie o su vostro disegno.',
-  'Profiling in lengths in {essence}, since {year}. Picture frame mouldings, skirting boards, window profiles, handrails and special pieces: in series or to your drawing.',
-  'Profilage en barres dans {essence}, depuis {year}. Moulures pour cadres, plinthes, profils pour menuiseries, mains courantes et pièces spéciales : en série ou sur votre plan.',
-  'Profilieren von Stangenware in {essence}, seit {year}. Bilderrahmenprofile, Sockelleisten, Fensterprofile, Handläufe und Sonderanfertigungen: in Serie oder nach Ihrer Zeichnung.')
+a('hero.p', 'Profilatura in asta in {essence}, dal {year}. Profili per quadri, battiscopa, serramenti, corrimano e pezzi speciali: in serie o su vostro disegno. Tutta la produzione avviene a Santa Giustina in Colle (PD).',
+  'Profiling in lengths in {essence}, since {year}. Picture frame mouldings, skirting boards, window profiles, handrails and special pieces: in series or to your drawing. All production takes place in Santa Giustina in Colle (Padua).',
+  'Profilage en barres dans {essence}, depuis {year}. Moulures pour cadres, plinthes, profils pour menuiseries, mains courantes et pièces spéciales : en série ou sur votre plan. Toute la production a lieu à Santa Giustina in Colle (Padoue).',
+  'Profilieren von Stangenware in {essence}, seit {year}. Bilderrahmenprofile, Sockelleisten, Fensterprofile, Handläufe und Sonderanfertigungen: in Serie oder nach Ihrer Zeichnung. Die gesamte Fertigung erfolgt in Santa Giustina in Colle (Padua).')
 a('hero.cta', 'Richiedi preventivo', 'Request a quote', 'Demander un devis', 'Angebot anfragen')
 a('hero.products', 'Prodotti', 'Products', 'Produits', 'Produkte')
 a('hero.alt', 'Blocchetti di legno massello in fila', 'Solid wood blocks in a row', 'Blocs de bois massif alignés', 'Massivholzklötze in einer Reihe')
@@ -54,8 +54,8 @@ a('draw.aria', 'Sezione tecnica di un profilo', 'Technical section of a profile'
 a('trust.1', 'Anno di fondazione', 'Year founded', 'Année de fondation', 'Gründungsjahr')
 a('trust.2v', 'Tutte', 'Any', 'Toutes', 'Alle')
 a('trust.2', 'Le essenze di legno', 'Wood species', 'Les essences de bois', 'Holzarten')
-a('trust.3v', 'Su misura', 'Made to measure', 'Sur mesure', 'Nach Maß')
-a('trust.3', 'Su disegno o campione', 'To drawing or sample', 'Sur plan ou échantillon', 'Nach Zeichnung oder Muster')
+a('trust.3v', 'Locale', 'Local', 'Locale', 'Lokal')
+a('trust.3', 'Tutta la produzione a Santa Giustina in Colle', 'All production in Santa Giustina in Colle', 'Toute la production à Santa Giustina in Colle', 'Gesamte Fertigung in Santa Giustina in Colle')
 a('trust.4', 'Prodotti certificati su richiesta', 'Certified products on request', 'Produits certifiés sur demande', 'Zertifizierte Produkte auf Anfrage')
 
 # --- Famiglie (home)
@@ -116,10 +116,10 @@ a('about.p1', 'Da oltre sessant’anni il legno è il nostro mestiere. La nostra
   'For over sixty years wood has been our trade. Our core business is {asta}, with great attention to precision and finish quality, in any kind of wood.',
   "Depuis plus de soixante ans, le bois est notre métier. Notre activité principale est le {asta}, avec une grande attention à la précision et à la qualité de finition, dans toutes les essences.",
   'Seit über sechzig Jahren ist Holz unser Handwerk. Unsere Hauptaufgabe ist das {asta}, mit großer Sorgfalt bei Präzision und Oberflächenqualität, in jeder Holzart.')
-a('about.p2', 'Produciamo coprifili, fermavetri, copri alluminio, piattine, masselli per porte, angolari, zoccolini, perlinati e profili su misura.',
-  'We produce architraves, glazing beads, aluminium covers, flat strips, door blanks, angle profiles, skirting boards, tongue-and-groove boards and made-to-measure profiles.',
-  'Nous fabriquons couvre-joints, parcloses, cache-aluminium, plats, bois massifs pour portes, cornières, plinthes, lambris et profils sur mesure.',
-  'Wir fertigen Deckleisten, Glasleisten, Aluminiumabdeckungen, Flachleisten, Türrohlinge, Winkelprofile, Sockelleisten, Profilbretter und Profile nach Maß.')
+a('about.p2', 'Produciamo coprifili, fermavetri, copri alluminio, piattine, masselli per porte, angolari, zoccolini, perlinati e profili su misura. Tutta la nostra produzione è realizzata a Santa Giustina in Colle (PD).',
+  'We produce architraves, glazing beads, aluminium covers, flat strips, door blanks, angle profiles, skirting boards, tongue-and-groove boards and made-to-measure profiles. All of our production is carried out in Santa Giustina in Colle (Padua).',
+  'Nous fabriquons couvre-joints, parcloses, cache-aluminium, plats, bois massifs pour portes, cornières, plinthes, lambris et profils sur mesure. Toute notre production est réalisée à Santa Giustina in Colle (Padoue).',
+  'Wir fertigen Deckleisten, Glasleisten, Aluminiumabdeckungen, Flachleisten, Türrohlinge, Winkelprofile, Sockelleisten, Profilbretter und Profile nach Maß. Unsere gesamte Produktion entsteht in Santa Giustina in Colle (Padua).')
 a('about.p3', 'Saldi alla filosofia del passato, con un occhio attento alle innovazioni tecnologiche e al futuro: ogni nostro prodotto ha un solo obiettivo, la soddisfazione del cliente.',
   'Faithful to the philosophy of the past, with an eye on technological innovation and the future: every product we make has one goal, customer satisfaction.',
   "Fidèles à la philosophie du passé, avec un œil attentif aux innovations technologiques et à l'avenir : chacun de nos produits a un seul objectif, la satisfaction du client.",

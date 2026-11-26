@@ -36,6 +36,8 @@ a('form.prefill', 'Richiesta per: {detail}', 'Request for: {detail}', 'Demande p
 a('spec.title', 'Scheda tecnica', 'Technical sheet', 'Fiche technique', 'Datenblatt')
 a('spec.essences', 'Essenze', 'Woods', 'Essences', 'Holzarten')
 a('spec.essencesV', 'Qualsiasi essenza di legno', 'Any wood species', 'Toutes les essences de bois', 'Jede Holzart')
+a('spec.origin', 'Provenienza', 'Origin', 'Origine', 'Herkunft')
+a('spec.originV', 'Produzione interamente a Santa Giustina in Colle (PD), Italia', 'Produced entirely in Santa Giustina in Colle (Padua), Italy', 'Produit entièrement à Santa Giustina in Colle (Padoue), Italie', 'Vollständig in Santa Giustina in Colle (Padua), Italien gefertigt')
 a('spec.production', 'Produzione', 'Production', 'Production', 'Fertigung')
 a('spec.productionV', 'In asta, in serie o su disegno', 'In lengths, in series or to drawing', 'En barres, en série ou sur plan', 'Als Stangenware, in Serie oder nach Zeichnung')
 a('spec.sizes', 'Misure', 'Sizes', 'Dimensions', 'Maße')
@@ -71,10 +73,10 @@ a('contact.maps', 'Apri su Google Maps ↗', 'Open in Google Maps ↗', 'Ouvrir 
 
 # --- Pagine: SEO e titoli
 a('seo.home.title', "G.P.E. Rizzolo {'|'} Profili in legno su misura dal 1960", "G.P.E. Rizzolo {'|'} Made-to-measure wood profiles since 1960", "G.P.E. Rizzolo {'|'} Profils en bois sur mesure depuis 1960", "G.P.E. Rizzolo {'|'} Holzprofile nach Maß seit 1960")
-a('seo.home.desc', 'Produzione di profili in legno su misura a Santa Giustina in Colle (PD): profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960.',
-  'Made-to-measure wood profiles manufactured in Santa Giustina in Colle (Padua, Italy): picture frame mouldings, skirting boards, window profiles, handrails, wall panelling and special pieces. Since 1960.',
-  'Fabrication de profils en bois sur mesure à Santa Giustina in Colle (Padoue, Italie) : moulures pour cadres, plinthes, profils pour menuiseries, mains courantes, boiseries et pièces spéciales. Depuis 1960.',
-  'Herstellung von Holzprofilen nach Maß in Santa Giustina in Colle (Padua, Italien): Bilderrahmenprofile, Sockelleisten, Fensterprofile, Handläufe, Wandvertäfelungen und Sonderanfertigungen. Seit 1960.')
+a('seo.home.desc', 'Produzione di profili in legno su misura a Santa Giustina in Colle (PD): profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960. Produzione interamente locale.',
+  'Made-to-measure wood profiles manufactured in Santa Giustina in Colle (Padua, Italy): picture frame mouldings, skirting boards, window profiles, handrails, wall panelling and special pieces. Since 1960. All production is local.',
+  'Fabrication de profils en bois sur mesure à Santa Giustina in Colle (Padoue, Italie) : moulures pour cadres, plinthes, profils pour menuiseries, mains courantes, boiseries et pièces spéciales. Depuis 1960. Production entièrement locale.',
+  'Herstellung von Holzprofilen nach Maß in Santa Giustina in Colle (Padua, Italien): Bilderrahmenprofile, Sockelleisten, Fensterprofile, Handläufe, Wandvertäfelungen und Sonderanfertigungen. Seit 1960. Gesamte Fertigung vor Ort.')
 a('seo.prods.title', 'Profili in legno: tutti i prodotti', 'Wooden profiles: all products', 'Profils en bois : tous les produits', 'Holzprofile: alle Produkte')
 a('seo.prods.desc', 'Battiscopa, profili per quadri, serramenti, perlinati, saune, semilavorati, profili di finitura e boiserie: produzione su misura G.P.E. Rizzolo.',
   'Skirting boards, picture frame mouldings, window profiles, tongue-and-groove boards, saunas, semi-finished products, finishing profiles and wall panelling: made-to-measure production by G.P.E. Rizzolo.',

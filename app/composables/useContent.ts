@@ -54,6 +54,7 @@ export function useContent() {
     const rows: SpecRow[] = [
       { label: t('spec.essences'), value: t('spec.essencesV') },
       { label: t('spec.production'), value: t('spec.productionV') },
+      { label: t('spec.origin'), value: t('spec.originV') },
       { label: t('spec.sizes'), value: t('spec.onRequest') },
       { label: t('spec.finishes'), value: t('spec.onRequest') },
       { label: t('spec.cert'), value: t('spec.certV') },

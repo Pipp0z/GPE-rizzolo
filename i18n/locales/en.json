@@ -42,7 +42,7 @@
   "h1b": "wood",
   "h1hl": "profiles",
   "essence": "any wood",
-  "p": "Profiling in lengths in {essence}, since {year}. Picture frame mouldings, skirting boards, window profiles, handrails and special pieces: in series or to your drawing.",
+  "p": "Profiling in lengths in {essence}, since {year}. Picture frame mouldings, skirting boards, window profiles, handrails and special pieces: in series or to your drawing. All production takes place in Santa Giustina in Colle (Padua).",
   "cta": "Request a quote",
   "products": "Products",
   "alt": "Solid wood blocks in a row",
@@ -57,8 +57,8 @@
   "1": "Year founded",
   "2v": "Any",
   "2": "Wood species",
-  "3v": "Made to measure",
-  "3": "To drawing or sample",
+  "3v": "Local",
+  "3": "All production in Santa Giustina in Colle",
   "4": "Certified products on request"
  },
  "fam": {
@@ -110,7 +110,7 @@
   "h": "Tradition doesn’t mean standing still. It means knowing how to move forward.",
   "asta": "profiling in lengths",
   "p1": "For over sixty years wood has been our trade. Our core business is {asta}, with great attention to precision and finish quality, in any kind of wood.",
-  "p2": "We produce architraves, glazing beads, aluminium covers, flat strips, door blanks, angle profiles, skirting boards, tongue-and-groove boards and made-to-measure profiles.",
+  "p2": "We produce architraves, glazing beads, aluminium covers, flat strips, door blanks, angle profiles, skirting boards, tongue-and-groove boards and made-to-measure profiles. All of our production is carried out in Santa Giustina in Colle (Padua).",
   "p3": "Faithful to the philosophy of the past, with an eye on technological innovation and the future: every product we make has one goal, customer satisfaction.",
   "btn": "Discover our story →",
   "card1": "The craft, in section",
@@ -168,6 +168,8 @@
   "title": "Technical sheet",
   "essences": "Woods",
   "essencesV": "Any wood species",
+  "origin": "Origin",
+  "originV": "Produced entirely in Santa Giustina in Colle (Padua), Italy",
   "production": "Production",
   "productionV": "In lengths, in series or to drawing",
   "sizes": "Sizes",
@@ -204,7 +206,7 @@
  "seo": {
   "home": {
    "title": "G.P.E. Rizzolo {'|'} Made-to-measure wood profiles since 1960",
-   "desc": "Made-to-measure wood profiles manufactured in Santa Giustina in Colle (Padua, Italy): picture frame mouldings, skirting boards, window profiles, handrails, wall panelling and special pieces. Since 1960."
+   "desc": "Made-to-measure wood profiles manufactured in Santa Giustina in Colle (Padua, Italy): picture frame mouldings, skirting boards, window profiles, handrails, wall panelling and special pieces. Since 1960. All production is local."
   },
   "prods": {
    "title": "Wooden profiles: all products",

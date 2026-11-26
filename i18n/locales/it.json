@@ -42,7 +42,7 @@
   "h1b": "in legno",
   "h1hl": "su misura",
   "essence": "qualsiasi essenza",
-  "p": "Profilatura in asta in {essence}, dal {year}. Profili per quadri, battiscopa, serramenti, corrimano e pezzi speciali: in serie o su vostro disegno.",
+  "p": "Profilatura in asta in {essence}, dal {year}. Profili per quadri, battiscopa, serramenti, corrimano e pezzi speciali: in serie o su vostro disegno. Tutta la produzione avviene a Santa Giustina in Colle (PD).",
   "cta": "Richiedi preventivo",
   "products": "Prodotti",
   "alt": "Blocchetti di legno massello in fila",
@@ -57,8 +57,8 @@
   "1": "Anno di fondazione",
   "2v": "Tutte",
   "2": "Le essenze di legno",
-  "3v": "Su misura",
-  "3": "Su disegno o campione",
+  "3v": "Locale",
+  "3": "Tutta la produzione a Santa Giustina in Colle",
   "4": "Prodotti certificati su richiesta"
  },
  "fam": {
@@ -110,7 +110,7 @@
   "h": "La tradizione non è restare fermi. È sapere come andare avanti.",
   "asta": "profilatura in asta",
   "p1": "Da oltre sessant’anni il legno è il nostro mestiere. La nostra attività principale è la {asta}, con grande attenzione alla precisione e alla qualità della finitura, su qualsiasi essenza di legno.",
-  "p2": "Produciamo coprifili, fermavetri, copri alluminio, piattine, masselli per porte, angolari, zoccolini, perlinati e profili su misura.",
+  "p2": "Produciamo coprifili, fermavetri, copri alluminio, piattine, masselli per porte, angolari, zoccolini, perlinati e profili su misura. Tutta la nostra produzione è realizzata a Santa Giustina in Colle (PD).",
   "p3": "Saldi alla filosofia del passato, con un occhio attento alle innovazioni tecnologiche e al futuro: ogni nostro prodotto ha un solo obiettivo, la soddisfazione del cliente.",
   "btn": "Scopri la nostra storia →",
   "card1": "Il mestiere, in sezione",
@@ -168,6 +168,8 @@
   "title": "Scheda tecnica",
   "essences": "Essenze",
   "essencesV": "Qualsiasi essenza di legno",
+  "origin": "Provenienza",
+  "originV": "Produzione interamente a Santa Giustina in Colle (PD), Italia",
   "production": "Produzione",
   "productionV": "In asta, in serie o su disegno",
   "sizes": "Misure",
@@ -204,7 +206,7 @@
  "seo": {
   "home": {
    "title": "G.P.E. Rizzolo {'|'} Profili in legno su misura dal 1960",
-   "desc": "Produzione di profili in legno su misura a Santa Giustina in Colle (PD): profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960."
+   "desc": "Produzione di profili in legno su misura a Santa Giustina in Colle (PD): profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960. Produzione interamente locale."
   },
   "prods": {
    "title": "Profili in legno: tutti i prodotti",
