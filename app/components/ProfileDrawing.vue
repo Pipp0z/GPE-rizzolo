@@ -1,5 +1,5 @@
 <script setup lang="ts">
-export type ProfileShape = 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetro' | 'angolare' | 'tondo'
+export type ProfileShape = 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetro' | 'angolare' | 'tondo' | 'modanatura'
 
 const props = withDefaults(defineProps<{
   shape?: ProfileShape
@@ -17,6 +17,7 @@ const paths: Record<ProfileShape, string> = {
   fermavetro: 'M30 78 V26 Q30 18 38 18 H84 Q94 18 94 28 V78 Z',
   angolare: 'M26 16 H62 V56 H136 V78 H26 Z',
   tondo: 'M80 14 a32 32 0 1 0 0.01 0 Z',
+  modanatura: 'M14 78 V60 H28 Q28 46 44 46 H56 Q56 32 72 30 Q88 28 94 40 Q98 48 110 48 H122 Q132 48 132 40 Q132 32 142 32 H146 V78 Z',
 }
 
 const d = computed(() => paths[props.shape])
@@ -29,10 +30,10 @@ const d = computed(() => paths[props.shape])
     <path v-if="shape === 'tondo'" d="M80 40 V88 M56 64 H104" pathLength="1" class="draw" :stroke="dim" stroke-width=".5" stroke-dasharray="2 1.5" />
     <!-- Quote -->
     <g :stroke="dim" stroke-width=".6" fill="none">
-      <path d="M12 90 H148 M12 87 V93 M148 87 V93" />
-      <path d="M156 14 V78 M153 14 H159 M153 78 H159" />
+      <path d="M12 90 H148 M12 87 V93 M148 87 V93" pathLength="1" class="draw draw-late" />
+      <path d="M156 14 V78 M153 14 H159 M153 78 H159" pathLength="1" class="draw draw-late" />
     </g>
-    <g :fill="dim" font-family="'JetBrains Mono', monospace" font-size="5">
+    <g :fill="dim" font-family="'JetBrains Mono', monospace" font-size="5" class="fade-late">
       <text x="80" y="98" text-anchor="middle">A</text>
       <text x="158" y="50" text-anchor="start" dx="-2" transform="rotate(90 158 46)">B</text>
     </g>

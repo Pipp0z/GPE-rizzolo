@@ -28,8 +28,12 @@
 
         <div v-reveal class="lg:col-span-5">
           <div class="relative bg-paper p-3 shadow-[10px_10px_0_#16120e]">
-            <NuxtImg format="webp" :src="images.custom" alt="Portabottiglie in rovere realizzato su misura" width="1100" height="733" loading="lazy" class="photo-ink w-full" />
-            <p class="mt-2 font-mono text-[11px] uppercase tracking-[.12em] text-muted">Fig. — Realizzazione su disegno</p>
+            <div class="blueprint relative flex aspect-[4/3] flex-col justify-between border-2 border-ink bg-cream p-5">
+              <p class="font-mono text-[11px] uppercase tracking-[.12em] text-muted">Il tuo disegno · sezione A–B</p>
+              <ProfileDrawing shape="modanatura" class="mx-auto w-[88%]" />
+              <p class="font-mono text-[11px] uppercase tracking-[.12em] text-brand-ink">→ Il pezzo prende forma</p>
+            </div>
+            <p class="mt-2 font-mono text-[11px] uppercase tracking-[.12em] text-muted">Fig. — Dal disegno al pezzo</p>
           </div>
         </div>
       </div>

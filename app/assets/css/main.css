@@ -121,6 +121,29 @@
   animation: draw 1.8s cubic-bezier(.4, 0, .2, 1) .2s forwards;
 }
 
+/* Le quote compaiono dopo il profilo */
+.draw-late { animation-delay: 1.5s; }
+
+@keyframes fade-in {
+  to { opacity: 1; }
+}
+
+.fade-late {
+  opacity: 0;
+  animation: fade-in .6s ease 2.4s forwards;
+}
+
+/* Dentro un blocco .reveal il disegno parte solo quando entra in vista */
+.reveal .draw,
+.reveal .fade-late {
+  animation-play-state: paused;
+}
+
+.reveal.visible .draw,
+.reveal.visible .fade-late {
+  animation-play-state: running;
+}
+
 @keyframes spin-slow {
   to { transform: rotate(360deg); }
 }
@@ -132,4 +155,5 @@
   .reveal { opacity: 1; transform: none; transition: none; }
   .marquee-track, .spin-slow { animation: none; }
   .draw { animation: none; stroke-dashoffset: 0; }
+  .fade-late { animation: none; opacity: 1; }
 }
