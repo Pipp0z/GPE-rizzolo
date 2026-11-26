@@ -13,6 +13,14 @@ useHead({
     type: 'application/ld+json',
     innerHTML: JSON.stringify({
       '@context': 'https://schema.org',
+      '@graph': [{
+        '@type': 'WebSite',
+        '@id': `${siteUrl}/#website`,
+        'url': siteUrl,
+        'name': company.name,
+        'inLanguage': ['it-IT', 'en-GB'],
+        'publisher': { '@id': `${siteUrl}/#organization` },
+      }, {
       '@type': ['Organization', 'LocalBusiness'],
       '@id': `${siteUrl}/#organization`,
       'name': company.legalName,
@@ -34,6 +42,7 @@ useHead({
         'addressRegion': company.address.province,
         'addressCountry': 'IT',
       },
+      }],
     }),
   }],
 })

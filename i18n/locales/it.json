@@ -190,7 +190,11 @@
   "inCat": "In questa categoria",
   "includes": "Cosa comprende",
   "open": "Apri scheda tecnica +",
-  "notFound": "Prodotto non trovato"
+  "notFound": "Prodotto non trovato",
+  "how": "Come richiedere un preventivo",
+  "sibling": "Anche in {name}",
+  "back": "← Torna a {name}",
+  "sheet": "Scheda tecnica →"
  },
  "prods": {
   "title": "I nostri profili in legno",
@@ -206,7 +210,7 @@
  "seo": {
   "home": {
    "title": "G.P.E. Rizzolo {'|'} Profili in legno su misura dal 1960",
-   "desc": "Produzione di profili in legno su misura a Santa Giustina in Colle (PD): profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960. Produzione interamente locale."
+   "desc": "Profili in legno su misura prodotti a Santa Giustina in Colle (PD): quadri, battiscopa, serramenti, perlinati, saune, boiserie. Dal 1960."
   },
   "prods": {
    "title": "Profili in legno: tutti i prodotti",
@@ -218,7 +222,7 @@
   },
   "company": {
    "title": "L’azienda: storia, valori e obiettivi",
-   "desc": "G.P.E. Rizzolo produce profili in legno dal 1960 a Santa Giustina in Colle (PD). Tre generazioni di esperienza, valori e obiettivi: qualità, serietà e soddisfazione del cliente."
+   "desc": "G.P.E. Rizzolo produce profili in legno dal 1960 a Santa Giustina in Colle (PD). Tre generazioni di esperienza e attenzione al cliente."
   },
   "certs": {
    "title": "Certificazioni FSC® e ISO 14001",
@@ -317,8 +321,8 @@
  "families": {
   "battiscopa": {
    "name": "Battiscopa",
-   "seoTitle": "Battiscopa in legno",
-   "seoDescription": "Battiscopa e zoccolini in legno su misura: al naturale, laccati o tinti, in diverse essenze e sezioni. Produzione G.P.E. Rizzolo, Padova.",
+   "seoTitle": "Battiscopa in legno su misura",
+   "seoDescription": "Battiscopa in legno su misura, al naturale, laccati o tinti, in qualsiasi essenza e sezione. Produzione propria a Santa Giustina in Colle (PD).",
    "intro": "Zoccolini in legno al naturale, laccati o tinti, in varie sezioni.",
    "body1": "I nostri battiscopa in legno sono disponibili in diverse sezioni e sagome, al naturale oppure colorati: bianchi, tinti noce o con finiture personalizzate.",
    "body2": "Forniamo rivenditori, falegnamerie, imprese e progettisti, anche con quantità e misure dedicate.",
@@ -330,7 +334,7 @@
   "profili-per-quadri": {
    "name": "Profili per quadri",
    "seoTitle": "Profili in legno per cornici e quadri",
-   "seoDescription": "Profili in legno per cornici e quadri prodotti a Santa Giustina in Colle (PD): varie sezioni e finiture, in qualsiasi essenza, anche su disegno.",
+   "seoDescription": "Profili in legno per cornici e quadri: tante sezioni e finiture, in qualsiasi essenza, anche su disegno. Produzione a Santa Giustina in Colle (PD).",
    "intro": "Profili in asta per cornici e incorniciatura, in diverse sezioni e finiture.",
    "body1": "Produciamo profili in legno per cornici e quadri destinati a laboratori di incorniciatura, aziende e progettisti. Le sezioni vanno dal profilo semplice alla modanatura più elaborata, in asta, pronti per essere tagliati e assemblati.",
    "body2": "Lavoriamo qualsiasi essenza di legno e possiamo sviluppare una sagoma nuova partendo da un vostro disegno o da un campione.",
@@ -342,7 +346,7 @@
   "profili-per-serramenti": {
    "name": "Profili per serramenti",
    "seoTitle": "Profili in legno per serramenti",
-   "seoDescription": "Profili in legno per serramenti: fermavetri, coprifili e componenti per infissi, su misura in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).",
+   "seoDescription": "Fermavetri, coprifili e profili in legno per serramenti, su misura in qualsiasi essenza. Produzione a Santa Giustina in Colle (PD), dal 1960.",
    "intro": "Fermavetri, coprifili e profili per infissi, con attenzione a dimensioni e finitura.",
    "body1": "Produciamo profili in legno per serramenti, in dimensioni e finiture concordate con il cliente. La profilatura in asta è la nostra attività principale e viene eseguita con grande attenzione alla precisione.",
    "body2": "Nella categoria rientrano fermavetri e coprifili, in diverse sagome e essenze.",
@@ -353,8 +357,8 @@
   },
   "perlinati": {
    "name": "Perlinati",
-   "seoTitle": "Perlinati, frangisole e masselli piallati in legno",
-   "seoDescription": "Perlinati, profili per frangisole e masselli piallati in legno, per rivestimenti e interni. Produzione G.P.E. Rizzolo, Padova.",
+   "seoTitle": "Perlinati e masselli piallati in legno",
+   "seoDescription": "Perlinati, frangisole e masselli piallati in legno per rivestimenti e interni, in diverse essenze. Produzione a Santa Giustina in Colle (PD).",
    "intro": "Perlinati e tavole a incastro, frangisole e masselli piallati.",
    "body1": "Produciamo perlinati e tavole a incastro in legno, adatti a rivestimenti interni di pareti e soffitti.",
    "body2": "Nella categoria rientrano anche i profili per frangisole e i masselli piallati, in diverse essenze e misure.",
@@ -366,7 +370,7 @@
   "profili-per-saune": {
    "name": "Profili per saune",
    "seoTitle": "Profili in legno per saune",
-   "seoDescription": "Profili in legno per saune: produzione su misura in diverse essenze e sezioni. G.P.E. Rizzolo, Santa Giustina in Colle (PD).",
+   "seoDescription": "Profili in legno per saune su misura, in diverse essenze e sezioni. Produzione a Santa Giustina in Colle (PD): richiedi un preventivo.",
    "intro": "Profili in legno per la realizzazione e la finitura di saune.",
    "body1": "Produciamo profili in legno per saune, nell’essenza e nella sezione richieste dal progetto.",
    "body2": "Contattaci per descriverci il tuo progetto: valutiamo insieme la soluzione più adatta.",
@@ -376,8 +380,8 @@
   },
   "semilavorati": {
    "name": "Semilavorati",
-   "seoTitle": "Semilavorati in legno",
-   "seoDescription": "Semilavorati in legno di varie sezioni e lunghezze, in qualsiasi essenza. G.P.E. Rizzolo, Santa Giustina in Colle (PD).",
+   "seoTitle": "Semilavorati in legno su misura",
+   "seoDescription": "Semilavorati in legno di varie sezioni e lunghezze, in qualsiasi essenza, anche su misura. Produzione a Santa Giustina in Colle (PD).",
    "intro": "Semilavorati in legno di varie sezioni, in qualsiasi essenza.",
    "body1": "Forniamo semilavorati in legno in diverse sezioni e lunghezze, pronti per le lavorazioni successive.",
    "body2": "Possiamo preparare le misure e le essenze richieste dal vostro ciclo produttivo.",
@@ -388,8 +392,8 @@
   },
   "profili-di-finitura": {
    "name": "Profili di finitura",
-   "seoTitle": "Profili di finitura in legno: tondi, angolari, corrimano",
-   "seoDescription": "Profili di finitura in legno: profili tondi, angolari e corrimano in diverse essenze e finiture. G.P.E. Rizzolo, produzione su misura a Padova.",
+   "seoTitle": "Profili di finitura in legno",
+   "seoDescription": "Profili di finitura in legno: tondi, angolari e corrimano in diverse essenze e finiture. Produzione a Santa Giustina in Colle (PD).",
    "intro": "Profili tondi, angolari e corrimano in diverse essenze e finiture.",
    "body1": "Realizziamo profili di finitura in legno per completare arredi, scale e interni: profili tondi, angolari e corrimano.",
    "body2": "Ogni profilo può essere prodotto nell’essenza, nella sezione e nella tinta richieste.",
@@ -401,7 +405,7 @@
   "boiserie": {
    "name": "Boiserie",
    "seoTitle": "Boiserie e cornici in legno",
-   "seoDescription": "Boiserie, cornici e modanature in legno per rivestimenti e soffitti, in diverse essenze e finiture. G.P.E. Rizzolo, profili in legno dal 1960.",
+   "seoDescription": "Boiserie, cornici e modanature in legno per pareti e soffitti, in diverse essenze e finiture. Produzione a Santa Giustina in Colle (PD).",
    "intro": "Cornici e modanature in legno per rivestimenti, soffitti e interni.",
    "body1": "Realizziamo boiserie, cornici e modanature in legno per dare carattere agli ambienti, dal dettaglio lineare alla decorazione più ricca.",
    "body2": "Ogni profilo può essere prodotto nell’essenza e nella finitura richiesta.",
@@ -414,31 +418,100 @@
  "children": {
   "fermavetri": {
    "name": "Fermavetri",
-   "text": "Fermavetro in legno in molte sagome e sezioni, forniti in asta."
+   "text": "Fermavetro in legno in molte sagome e sezioni, forniti in asta.",
+   "seoTitle": "Fermavetri in legno su misura",
+   "seoDescription": "Fermavetri in legno in molte sagome e sezioni, in qualsiasi essenza, forniti in asta. Produzione a Santa Giustina in Colle (PD).",
+   "body1": "I fermavetri in legno trattengono il vetro nel serramento e ne completano l’estetica. Li produciamo in molte sagome e sezioni, in asta, pronti per il taglio e il montaggio.",
+   "body2": "Lavoriamo qualsiasi essenza e possiamo sviluppare una sagoma dedicata partendo dal vostro serramento, da un disegno o da un campione.",
+   "use1": "Serramenti e infissi in legno",
+   "use2": "Produttori di finestre e porte-finestre",
+   "use3": "Falegnamerie",
+   "use4": "Sagome su disegno"
   },
   "coprifili": {
    "name": "Coprifili",
-   "text": "Coprifili in legno per serramenti e infissi, in diverse sezioni."
+   "text": "Coprifili in legno per serramenti e infissi, in diverse sezioni.",
+   "seoTitle": "Coprifili in legno su misura",
+   "seoDescription": "Coprifili in legno per serramenti e porte, in diverse sezioni ed essenze, anche su disegno. Produzione a Santa Giustina in Colle (PD).",
+   "body1": "I coprifili coprono il giunto tra serramento e muro e rifiniscono l’apertura. Produciamo coprifili in legno in diverse sezioni, al naturale o colorati.",
+   "body2": "Essenze, sezioni e lunghezze si concordano con il cliente, in serie o su disegno.",
+   "use1": "Porte e finestre interne",
+   "use2": "Ristrutturazioni e nuove costruzioni",
+   "use3": "Falegnamerie e posatori",
+   "use4": "Finiture colorate su richiesta"
   },
   "frangisole": {
    "name": "Frangisole",
-   "text": "Profili per frangisole e rivestimenti esterni, in diverse sagome e finiture."
+   "text": "Profili per frangisole e rivestimenti esterni, in diverse sagome e finiture.",
+   "seoTitle": "Frangisole in legno",
+   "seoDescription": "Profili in legno per frangisole e rivestimenti esterni, in diverse sagome ed essenze. Produzione a Santa Giustina in Colle (PD).",
+   "body1": "I frangisole in legno schermano la luce e valorizzano le facciate. Produciamo profili per frangisole e rivestimenti esterni in diverse sagome e finiture.",
+   "body2": "Possiamo sviluppare la sezione più adatta al progetto di architettura, nell’essenza richiesta.",
+   "use1": "Facciate e rivestimenti esterni",
+   "use2": "Schermature solari",
+   "use3": "Progetti di architettura",
+   "use4": "Sezioni su disegno"
   },
   "masselli-piallati": {
    "name": "Masselli piallati",
-   "text": "Masselli e listelli piallati di varie sezioni, in diverse essenze."
+   "text": "Masselli e listelli piallati di varie sezioni, in diverse essenze.",
+   "seoTitle": "Masselli piallati in legno",
+   "seoDescription": "Masselli e listelli piallati in legno, di varie sezioni e lunghezze, in diverse essenze. Produzione a Santa Giustina in Colle (PD).",
+   "body1": "I masselli piallati sono travetti e listelli in legno pieno con superfici lisce, pronti per le lavorazioni successive. Li forniamo in diverse sezioni e lunghezze.",
+   "body2": "Possiamo preparare essenze, misure e quantità secondo le esigenze della vostra produzione.",
+   "use1": "Falegnamerie e carpenterie",
+   "use2": "Semilavorati per porte e arredo",
+   "use3": "Listelli e traversi",
+   "use4": "Sezioni su misura"
   },
   "profili-tondi": {
    "name": "Profili tondi",
-   "text": "Tondini e profili torniti in legno, in varie misure e essenze."
+   "text": "Tondini e profili torniti in legno, in varie misure e essenze.",
+   "seoTitle": "Profili tondi in legno",
+   "seoDescription": "Tondini e profili tondi torniti in legno, in varie misure ed essenze, anche su disegno. Produzione a Santa Giustina in Colle (PD).",
+   "body1": "Produciamo tondini e profili tondi in legno, anche con teste e lavorazioni accessorie, in diversi diametri e lunghezze.",
+   "body2": "Essenza e misure si definiscono secondo il vostro disegno o campione.",
+   "use1": "Tondini e aste",
+   "use2": "Componenti per arredo",
+   "use3": "Lavorazioni torniti",
+   "use4": "Pezzi su disegno"
   },
   "angolari": {
    "name": "Angolari",
-   "text": "Angolari in legno in diverse essenze e tinte, al naturale o colorati."
+   "text": "Angolari in legno in diverse essenze e tinte, al naturale o colorati.",
+   "seoTitle": "Angolari in legno",
+   "seoDescription": "Angolari in legno in diverse essenze e tinte, al naturale o colorati, per finire e proteggere gli spigoli. Produzione a Santa Giustina (PD).",
+   "body1": "Gli angolari in legno rifiniscono e proteggono gli spigoli di pareti, arredi e scale. Li produciamo in diverse sezioni, al naturale o tinti.",
+   "body2": "Essenze, tinte e misure su richiesta, anche in serie dedicate.",
+   "use1": "Finiture di interni",
+   "use2": "Protezione degli spigoli",
+   "use3": "Arredo e falegnameria",
+   "use4": "Colorazioni personalizzate"
   },
   "corrimano": {
    "name": "Corrimano",
-   "text": "Corrimano in legno massello per scale e balaustre, dal chiaro naturale al noce scuro."
+   "text": "Corrimano in legno massello per scale e balaustre, dal chiaro naturale al noce scuro.",
+   "seoTitle": "Corrimano in legno massello",
+   "seoDescription": "Corrimano in legno massello per scale e balaustre, dal chiaro naturale al noce scuro, anche su misura. Produzione a Santa Giustina in Colle (PD).",
+   "body1": "I corrimano in legno massello hanno sagome ergonomiche e superfici curate, per scale interne e balaustre. Sono disponibili in diverse essenze e tonalità.",
+   "body2": "Forniamo scalifici, falegnamerie e imprese, anche con lunghezze e sezioni dedicate.",
+   "use1": "Scale interne",
+   "use2": "Balaustre e parapetti",
+   "use3": "Scalifici e falegnamerie",
+   "use4": "Essenze e tinte a scelta"
   }
+ },
+ "faq": {
+  "title": "Domande frequenti",
+  "1q": "{name}: posso ordinarli su misura?",
+  "1a": "Sì. Produciamo su disegno, su campione o secondo le tue specifiche, in qualsiasi sezione e lunghezza concordata.",
+  "2q": "In quali essenze di legno producete?",
+  "2a": "In qualsiasi essenza di legno, ad esempio abete, pino, larice, meranti, okumè, rovere e frassino. Altre essenze su richiesta.",
+  "3q": "Dove vengono prodotti?",
+  "3a": "Tutta la produzione avviene nella nostra sede di Santa Giustina in Colle, in provincia di Padova.",
+  "4q": "Avete prodotti certificati FSC®?",
+  "4a": "Sì, prodotti certificati FSC® sono disponibili su richiesta.",
+  "5q": "Come posso richiedere un preventivo?",
+  "5a": "Compila il modulo indicando prodotto, essenza e quantità, oppure chiamaci al {phone}. Ti rispondiamo il prima possibile."
  }
 }

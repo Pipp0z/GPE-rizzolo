@@ -1,6 +1,6 @@
 import json, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from gen3 import T
+from gen4 import T
 import os
 out=os.path.join(os.path.dirname(__file__), '..', '..', 'i18n', 'locales')
 LANGS=sys.argv[1:] or ['it','en']

@@ -190,7 +190,11 @@
   "inCat": "In this category",
   "includes": "What it includes",
   "open": "Open technical sheet +",
-  "notFound": "Product not found"
+  "notFound": "Product not found",
+  "how": "How to request a quote",
+  "sibling": "Also in {name}",
+  "back": "← Back to {name}",
+  "sheet": "Technical sheet →"
  },
  "prods": {
   "title": "Our wooden profiles",
@@ -206,11 +210,11 @@
  "seo": {
   "home": {
    "title": "G.P.E. Rizzolo {'|'} Made-to-measure wood profiles since 1960",
-   "desc": "Made-to-measure wood profiles manufactured in Santa Giustina in Colle (Padua, Italy): picture frame mouldings, skirting boards, window profiles, handrails, wall panelling and special pieces. Since 1960. All production is local."
+   "desc": "Made-to-measure wood profiles made in Santa Giustina in Colle (Padua): picture frames, skirting boards, windows, panelling, saunas. Since 1960."
   },
   "prods": {
    "title": "Wooden profiles: all products",
-   "desc": "Skirting boards, picture frame mouldings, window profiles, tongue-and-groove boards, saunas, semi-finished products, finishing profiles and wall panelling: made-to-measure production by G.P.E. Rizzolo."
+   "desc": "Skirting boards, picture frame mouldings, window profiles, tongue-and-groove boards, saunas, finishing profiles and panelling. By G.P.E. Rizzolo."
   },
   "contact": {
    "title": "Contact and quote request",
@@ -218,7 +222,7 @@
   },
   "company": {
    "title": "The company: history, values and goals",
-   "desc": "G.P.E. Rizzolo has produced wood profiles since 1960 in Santa Giustina in Colle (Padua). Three generations of experience, values and goals: quality, reliability and customer satisfaction."
+   "desc": "G.P.E. Rizzolo has made wood profiles since 1960 in Santa Giustina in Colle (Padua). Three generations of experience and customer focus."
   },
   "certs": {
    "title": "FSC® and ISO 14001 certifications",
@@ -317,8 +321,8 @@
  "families": {
   "battiscopa": {
    "name": "Skirting boards",
-   "seoTitle": "Wooden skirting boards",
-   "seoDescription": "Made-to-measure wooden skirting boards: natural, lacquered or stained, in different woods and profiles. Produced by G.P.E. Rizzolo, Padua, Italy.",
+   "seoTitle": "Custom wooden skirting boards",
+   "seoDescription": "Custom wooden skirting boards, natural, lacquered or stained, in any wood and profile. Made in-house in Santa Giustina in Colle, Padua.",
    "intro": "Wooden skirting boards, natural, lacquered or stained, in a range of profiles.",
    "body1": "Our wooden skirting boards come in different profiles and shapes, natural or coloured: white, walnut-stained or with custom finishes.",
    "body2": "We supply retailers, joiners, building firms and designers, with quantities and sizes tailored to your needs.",
@@ -330,7 +334,7 @@
   "profili-per-quadri": {
    "name": "Picture frame mouldings",
    "seoTitle": "Wooden mouldings for picture frames",
-   "seoDescription": "Wooden mouldings for picture frames made in Santa Giustina in Colle (Padua): many profiles and finishes, in any wood, also to your drawing.",
+   "seoDescription": "Wooden mouldings for picture frames: many profiles and finishes, any wood, also to your drawing. Made in Santa Giustina in Colle, Padua.",
    "intro": "Lengths of moulding for picture frames and framing, in a range of profiles and finishes.",
    "body1": "We produce wooden mouldings for picture frames, for framing workshops, companies and designers. Profiles range from simple sections to elaborate mouldings, supplied in lengths ready to be cut and assembled.",
    "body2": "We work with any kind of wood and can develop a new profile from your drawing or sample.",
@@ -342,7 +346,7 @@
   "profili-per-serramenti": {
    "name": "Window & door profiles",
    "seoTitle": "Wooden profiles for windows and doors",
-   "seoDescription": "Wooden profiles for windows and doors: glazing beads, architraves and components for frames, made to measure in any wood. G.P.E. Rizzolo, Santa Giustina in Colle (Padua).",
+   "seoDescription": "Glazing beads, architraves and wooden profiles for windows and doors, made to measure in any wood. Made in Santa Giustina in Colle, Padua.",
    "intro": "Glazing beads, architraves and profiles for window frames, with attention to size and finish.",
    "body1": "We produce wooden profiles for windows and doors, in sizes and finishes agreed with the customer. Profiling in lengths is our core business and is carried out with great attention to precision.",
    "body2": "The category includes glazing beads and architraves, in different shapes and woods.",
@@ -353,8 +357,8 @@
   },
   "perlinati": {
    "name": "Tongue-and-groove boards",
-   "seoTitle": "Tongue-and-groove boards, sunshades and planed solid timber",
-   "seoDescription": "Wooden tongue-and-groove boards, sunshade profiles and planed solid timber for cladding and interiors. Produced by G.P.E. Rizzolo, Padua.",
+   "seoTitle": "Wooden tongue-and-groove boards",
+   "seoDescription": "Tongue-and-groove boards, sunshades and planed solid timber for cladding and interiors, in many woods. Made in Santa Giustina in Colle, Padua.",
    "intro": "Tongue-and-groove boards, sunshades and planed solid timber.",
    "body1": "We produce tongue-and-groove wooden boards, suitable for interior wall and ceiling cladding.",
    "body2": "The category also includes sunshade profiles and planed solid timber, in different woods and sizes.",
@@ -366,7 +370,7 @@
   "profili-per-saune": {
    "name": "Sauna profiles",
    "seoTitle": "Wooden profiles for saunas",
-   "seoDescription": "Wooden profiles for saunas: made to measure in different woods and sections. G.P.E. Rizzolo, Santa Giustina in Colle (Padua).",
+   "seoDescription": "Made-to-measure wooden profiles for saunas, in different woods and sections. Made in Santa Giustina in Colle, Padua: request a quote.",
    "intro": "Wooden profiles for building and finishing saunas.",
    "body1": "We produce wooden profiles for saunas, in the wood and section your project requires.",
    "body2": "Get in touch and tell us about your project: together we will find the most suitable solution.",
@@ -377,7 +381,7 @@
   "semilavorati": {
    "name": "Semi-finished products",
    "seoTitle": "Semi-finished wood products",
-   "seoDescription": "Semi-finished wood products in various sections and lengths, in any wood. G.P.E. Rizzolo, Santa Giustina in Colle (Padua).",
+   "seoDescription": "Semi-finished wood products in various sections and lengths, in any wood, also made to measure. Made in Santa Giustina in Colle, Padua.",
    "intro": "Semi-finished wood products in various sections, in any wood.",
    "body1": "We supply semi-finished wood products in different sections and lengths, ready for further processing.",
    "body2": "We can prepare the sizes and woods your production cycle requires.",
@@ -388,8 +392,8 @@
   },
   "profili-di-finitura": {
    "name": "Finishing profiles",
-   "seoTitle": "Wooden finishing profiles: round, angle and handrails",
-   "seoDescription": "Wooden finishing profiles: round profiles, angle profiles and handrails in different woods and finishes. G.P.E. Rizzolo, made-to-measure production in Padua.",
+   "seoTitle": "Wooden finishing profiles",
+   "seoDescription": "Wooden finishing profiles: round profiles, angle profiles and handrails in many woods and finishes. Made in Santa Giustina in Colle, Padua.",
    "intro": "Round profiles, angle profiles and handrails in different woods and finishes.",
    "body1": "We make wooden finishing profiles to complete furniture, staircases and interiors: round profiles, angle profiles and handrails.",
    "body2": "Every profile can be produced in the wood, section and colour you need.",
@@ -401,7 +405,7 @@
   "boiserie": {
    "name": "Wall panelling",
    "seoTitle": "Wooden wall panelling and mouldings",
-   "seoDescription": "Wooden wall panelling, cornices and mouldings for cladding and ceilings, in different woods and finishes. G.P.E. Rizzolo, wood profiles since 1960.",
+   "seoDescription": "Wooden wall panelling, cornices and mouldings for walls and ceilings, in many woods and finishes. Made in Santa Giustina in Colle, Padua.",
    "intro": "Wooden cornices and mouldings for wall cladding, ceilings and interiors.",
    "body1": "We make wooden wall panelling, cornices and mouldings that give character to a room, from the simplest detail to the richest decoration.",
    "body2": "Every profile can be produced in the wood and finish you require.",
@@ -414,31 +418,100 @@
  "children": {
   "fermavetri": {
    "name": "Glazing beads",
-   "text": "Wooden glazing beads in many shapes and sections, supplied in lengths."
+   "text": "Wooden glazing beads in many shapes and sections, supplied in lengths.",
+   "seoTitle": "Custom wooden glazing beads",
+   "seoDescription": "Wooden glazing beads in many shapes and sections, in any wood, supplied in lengths. Made in Santa Giustina in Colle, Padua.",
+   "body1": "Wooden glazing beads hold the glass in a window frame and complete its look. We make them in many shapes and sections, in lengths, ready to be cut and fitted.",
+   "body2": "We work with any wood and can develop a dedicated profile from your window, a drawing or a sample.",
+   "use1": "Wooden windows and frames",
+   "use2": "Window and French-door manufacturers",
+   "use3": "Joinery workshops",
+   "use4": "Profiles to your drawing"
   },
   "coprifili": {
    "name": "Architraves",
-   "text": "Wooden architraves for windows, doors and frames, in different sections."
+   "text": "Wooden architraves for windows, doors and frames, in different sections.",
+   "seoTitle": "Custom wooden architraves",
+   "seoDescription": "Wooden architraves for doors and windows, in different sections and woods, also to your drawing. Made in Santa Giustina in Colle, Padua.",
+   "body1": "Architraves cover the joint between frame and wall and finish the opening. We make wooden architraves in different sections, natural or coloured.",
+   "body2": "Woods, sections and lengths are agreed with the customer, in series or to your drawing.",
+   "use1": "Interior doors and windows",
+   "use2": "Renovations and new builds",
+   "use3": "Joiners and fitters",
+   "use4": "Coloured finishes on request"
   },
   "frangisole": {
    "name": "Sunshades",
-   "text": "Profiles for sunshades and exterior cladding, in different shapes and finishes."
+   "text": "Profiles for sunshades and exterior cladding, in different shapes and finishes.",
+   "seoTitle": "Wooden sunshade profiles",
+   "seoDescription": "Wooden profiles for sunshades and exterior cladding, in different shapes and woods. Made in Santa Giustina in Colle, Padua.",
+   "body1": "Wooden sunshades filter the light and enhance façades. We make profiles for sunshades and exterior cladding in different shapes and finishes.",
+   "body2": "We can develop the section best suited to your architectural project, in the wood you require.",
+   "use1": "Façades and exterior cladding",
+   "use2": "Solar shading",
+   "use3": "Architectural projects",
+   "use4": "Sections to your drawing"
   },
   "masselli-piallati": {
    "name": "Planed solid timber",
-   "text": "Planed solid timber and battens in various sections, in different woods."
+   "text": "Planed solid timber and battens in various sections, in different woods.",
+   "seoTitle": "Planed solid timber",
+   "seoDescription": "Planed solid timber and battens in various sections and lengths, in different woods. Made in Santa Giustina in Colle, Padua.",
+   "body1": "Planed solid timber is beams and battens of solid wood with smooth surfaces, ready for further processing. We supply it in different sections and lengths.",
+   "body2": "We can prepare woods, sizes and quantities to suit your production.",
+   "use1": "Joinery and carpentry",
+   "use2": "Semi-finished parts for doors and furniture",
+   "use3": "Battens and rails",
+   "use4": "Custom sections"
   },
   "profili-tondi": {
    "name": "Round profiles",
-   "text": "Wooden dowels and turned profiles, in various sizes and woods."
+   "text": "Wooden dowels and turned profiles, in various sizes and woods.",
+   "seoTitle": "Round wooden profiles",
+   "seoDescription": "Wooden dowels and turned round profiles in various sizes and woods, also to your drawing. Made in Santa Giustina in Colle, Padua.",
+   "body1": "We make wooden dowels and round profiles, also with heads and extra machining, in different diameters and lengths.",
+   "body2": "Wood and sizes are defined from your drawing or sample.",
+   "use1": "Dowels and rods",
+   "use2": "Furniture components",
+   "use3": "Turned parts",
+   "use4": "Pieces to your drawing"
   },
   "angolari": {
    "name": "Angle profiles",
-   "text": "Wooden angle profiles in different woods and colours, natural or coloured."
+   "text": "Wooden angle profiles in different woods and colours, natural or coloured.",
+   "seoTitle": "Wooden angle profiles",
+   "seoDescription": "Wooden angle profiles in many woods and colours, natural or coloured, to finish and protect edges. Made in Santa Giustina in Colle, Padua.",
+   "body1": "Wooden angle profiles finish and protect the edges of walls, furniture and stairs. We make them in different sections, natural or stained.",
+   "body2": "Woods, colours and sizes on request, also in dedicated series.",
+   "use1": "Interior finishing",
+   "use2": "Edge protection",
+   "use3": "Furniture and joinery",
+   "use4": "Custom colours"
   },
   "corrimano": {
    "name": "Handrails",
-   "text": "Solid wood handrails for staircases and balustrades, from light natural to dark walnut."
+   "text": "Solid wood handrails for staircases and balustrades, from light natural to dark walnut.",
+   "seoTitle": "Solid wood handrails",
+   "seoDescription": "Solid wood handrails for staircases and balustrades, from light natural to dark walnut, also made to measure. Made in Santa Giustina in Colle, Padua.",
+   "body1": "Solid wood handrails have ergonomic profiles and finely finished surfaces, for interior staircases and balustrades. Available in different woods and shades.",
+   "body2": "We supply stair makers, joiners and building firms, also with dedicated lengths and sections.",
+   "use1": "Interior staircases",
+   "use2": "Balustrades and railings",
+   "use3": "Stair makers and joiners",
+   "use4": "Woods and stains of your choice"
   }
+ },
+ "faq": {
+  "title": "Frequently asked questions",
+  "1q": "{name}: can I order them made to measure?",
+  "1a": "Yes. We produce to your drawing, sample or specifications, in any agreed section and length.",
+  "2q": "Which woods do you work with?",
+  "2a": "In any kind of wood, for example fir, pine, larch, meranti, okoumé, oak and ash. Other woods on request.",
+  "3q": "Where are they made?",
+  "3a": "All production takes place at our site in Santa Giustina in Colle, in the province of Padua.",
+  "4q": "Do you have FSC®-certified products?",
+  "4a": "Yes, FSC®-certified products are available on request.",
+  "5q": "How can I request a quote?",
+  "5a": "Fill in the form with product, wood and quantity, or call us on {phone}. We will reply as soon as possible."
  }
 }

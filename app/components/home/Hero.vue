@@ -24,7 +24,7 @@
 
       <div class="relative lg:col-span-5">
         <div class="relative h-[420px] overflow-hidden bg-ink md:h-[600px]">
-          <NuxtImg format="webp" src="/images/hero.jpg" :alt="$t('hero.alt')" width="1000" height="665" fetchpriority="high" loading="eager" class="size-full object-cover object-[60%_bottom] saturate-[1.2] contrast-105 sepia-[.2]" />
+          <NuxtImg format="webp" src="/images/blocchetti-legno-massello-gpe-rizzolo.jpg" :alt="$t('hero.alt')" width="1000" height="665" fetchpriority="high" loading="eager" class="size-full object-cover object-[60%_bottom] saturate-[1.2] contrast-105 sepia-[.2]" />
           <div class="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-brand/20 mix-blend-multiply" />
           <span class="absolute bottom-4 left-4 bg-ink px-2 py-1 font-mono text-[11px] uppercase tracking-[.12em] text-white">{{ $t('hero.fig') }}</span>
         </div>

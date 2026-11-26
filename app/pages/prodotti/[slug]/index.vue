@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const route = useRoute()
 const { t } = useI18n()
-const { families, familyBySlug, specSheet } = useContent()
+const { families, familyBySlug, specSheet, steps, faq } = useContent()
 const family = computed(() => familyBySlug(String(route.params.slug)))
 
 if (!family.value) {
@@ -16,7 +16,6 @@ const SHAPES: Record<string, 'cornice' | 'battiscopa' | 'corrimano' | 'fermavetr
   'profili-di-finitura': 'angolare',
 }
 
-const openChild = ref<FamilyChild | null>(null)
 const related = computed(() => families.value.filter(f => f.slug !== family.value!.slug).slice(0, 3))
 
 watchEffect(() => {
@@ -28,7 +27,10 @@ watchEffect(() => {
     description: f.seoDescription,
     path,
     image: f.image,
-    jsonLd: [breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.products'), path: '/prodotti' }, { name: f.name, path }])],
+    jsonLd: [
+      breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.products'), path: '/prodotti' }, { name: f.name, path }]),
+      faqLd(faq(f.name)),
+    ],
   })
 })
 </script>
@@ -81,14 +83,14 @@ watchEffect(() => {
         <h2 class="display mt-4 text-[clamp(2.4rem,5vw,4rem)] !text-white">{{ $t('prod.includes') }}</h2>
         <ul class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           <li v-for="c in family.children" :key="c.slug">
-            <button type="button" class="group block h-full w-full border-2 border-white/20 bg-ink-2 text-left transition hover:border-brand" @click="openChild = c">
+            <NuxtLinkLocale :to="`/prodotti/${family.slug}/${c.slug}`" class="group block h-full w-full border-2 border-white/20 bg-ink-2 text-left transition hover:border-brand">
               <NuxtImg format="webp" :src="c.image" :alt="$t('prod.alt', { name: c.name })" width="700" height="467" loading="lazy" class="aspect-[3/2] w-full object-cover" />
               <div class="p-5">
                 <h3 class="display text-[30px] !text-white transition group-hover:text-brand">{{ c.name }}</h3>
                 <p class="mt-2 text-[15px] leading-relaxed text-white/75">{{ c.text }}</p>
                 <span class="mt-4 inline-block font-mono text-[12px] font-medium uppercase tracking-[.12em] text-brand">{{ $t('prod.open') }}</span>
               </div>
-            </button>
+            </NuxtLinkLocale>
           </li>
         </ul>
       </div>
@@ -107,7 +109,21 @@ watchEffect(() => {
         </ul>
       </div>
     </section>
-    <ChildModal :family="family" :child="openChild" @close="openChild = null" />
+    <!-- Come richiedere un preventivo -->
+    <section class="section-pad bg-brand text-ink">
+      <div class="wrap grid items-start gap-10 lg:grid-cols-12">
+        <h2 class="display text-[clamp(2.4rem,5vw,4rem)] !text-ink lg:col-span-4">{{ $t('prod.how') }}</h2>
+        <ol class="grid gap-0 sm:grid-cols-3 lg:col-span-8">
+          <li v-for="s in steps" :key="s.n" class="border-t-2 border-ink py-5 sm:pr-6">
+            <span class="display text-[44px]">{{ s.n }}</span>
+            <h3 class="display text-[26px] !text-ink">{{ s.title }}</h3>
+            <p class="mt-1 text-[15px]">{{ s.text }}</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <ProductFaq :items="faq(family.name)" />
     <HomeContactCta />
   </div>
 </template>

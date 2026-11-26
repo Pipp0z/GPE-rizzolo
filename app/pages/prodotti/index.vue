@@ -1,12 +1,23 @@
 <script setup lang="ts">
 const { t } = useI18n()
-const { families, otherProducts } = useContent()
+const { families, otherProducts, localePath } = useContent()
 
 usePageSeo({
   title: t('seo.prods.title'),
   description: t('seo.prods.desc'),
   path: '/prodotti',
-  jsonLd: [breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.products'), path: '/prodotti' }])],
+  jsonLd: [
+    breadcrumbLd([{ name: t('crumb.home'), path: '/' }, { name: t('nav.products'), path: '/prodotti' }]),
+    {
+      '@type': 'ItemList',
+      'itemListElement': families.value.map((f, i) => ({
+        '@type': 'ListItem',
+        'position': i + 1,
+        'name': f.name,
+        'url': `${useRuntimeConfig().public.siteUrl}${localePath(`/prodotti/${f.slug}`)}`,
+      })),
+    },
+  ],
 })
 </script>
 

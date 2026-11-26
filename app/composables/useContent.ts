@@ -22,12 +22,24 @@ export function useContent() {
       intro: t(`${k}.intro`),
       body: list('body'),
       uses: list('use'),
-      children: b.children?.map(c => ({
-        slug: c.slug,
-        image: c.image,
-        name: t(`children.${c.slug}.name`),
-        text: t(`children.${c.slug}.text`),
-      })),
+      children: b.children?.map((c) => {
+        const ck = `children.${c.slug}`
+        const clist = (prefix: string) => {
+          const out: string[] = []
+          for (let i = 1; te(`${ck}.${prefix}${i}`, 'it'); i++) out.push(t(`${ck}.${prefix}${i}`))
+          return out
+        }
+        return {
+          slug: c.slug,
+          image: c.image,
+          name: t(`${ck}.name`),
+          text: t(`${ck}.text`),
+          seoTitle: t(`${ck}.seoTitle`),
+          seoDescription: t(`${ck}.seoDescription`),
+          body: clist('body'),
+          uses: clist('use'),
+        }
+      }),
     }
   }))
 
@@ -47,6 +59,10 @@ export function useContent() {
     text: t(`cert.${c.key}`),
     alt: t(`cert.${c.key}Alt`),
   })))
+  const faq = (name: string) => [1, 2, 3, 4, 5].map(n => ({
+    q: t(`faq.${n}q`, { name }),
+    a: t(`faq.${n}a`, { phone: company.phone }),
+  }))
   const brochures = computed(() => brochureFiles.map(b => ({ label: t(`brochure.${b.key}`), href: b.href })))
 
   /** Scheda tecnica di default, integrata dalle righe specifiche del prodotto. */
@@ -67,5 +83,5 @@ export function useContent() {
     return rows
   }
 
-  return { families, familyBySlug, nav, essences, otherProducts, steps, history, values, goals, certifications, brochures, specSheet, localePath }
+  return { families, familyBySlug, nav, essences, otherProducts, steps, history, values, goals, certifications, brochures, faq, specSheet, localePath }
 }
