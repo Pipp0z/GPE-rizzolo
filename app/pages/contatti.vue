@@ -33,6 +33,10 @@ const mapQuery = encodeURIComponent(`${company.address.street}, ${company.addres
           <li><a :href="company.phoneHref" class="text-brand-ink hover:underline">☎ {{ company.phone }}</a></li>
           <li><a :href="`mailto:${company.email}`" class="text-brand-ink hover:underline">✉ {{ company.email }}</a></li>
         </ul>
+        <div>
+          <p class="mb-3 font-mono text-[12px] uppercase tracking-[.14em] text-muted">Seguici</p>
+          <SocialLinks />
+        </div>
         <a :href="`https://www.google.com/maps/search/?api=1&query=${mapQuery}`" target="_blank" rel="noopener" class="btn btn-secondary">Apri su Google Maps ↗</a>
       </aside>
      </div>

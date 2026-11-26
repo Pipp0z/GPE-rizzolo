@@ -16,6 +16,12 @@ export const company = {
   partners: ['Paolo', 'Elio', 'Samuel', 'Steven'],
 }
 
+export const socials = [
+  { name: 'Instagram', href: 'https://www.instagram.com/gpe_rizzolo/' },
+  { name: 'YouTube', href: 'https://www.youtube.com/channel/UCQkj1cOTQMWi18hqT2lkp6A' },
+  { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=100077918561946' },
+]
+
 export const navLinks = [
   { label: 'Prodotti', href: '/prodotti' },
   { label: 'Su misura', href: '/#su-misura' },

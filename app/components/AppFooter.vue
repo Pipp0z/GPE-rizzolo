@@ -9,6 +9,8 @@
           <p class="mt-5 max-w-[320px] text-[15px] leading-relaxed">
             Profili in legno di qualità dal {{ company.since }}. Profilatura in asta, in qualsiasi essenza, su disegno o campione.
           </p>
+          <p class="mb-3 mt-6 font-mono text-[12px] uppercase tracking-[.14em] text-brand">Seguici</p>
+          <SocialLinks dark />
         </div>
 
         <div>

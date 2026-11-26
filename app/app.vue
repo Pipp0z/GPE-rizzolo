@@ -16,6 +16,7 @@ useHead({
       'description': 'Produzione di profili in legno su misura: profili per quadri, battiscopa, serramenti, corrimano, boiserie e lavorazioni speciali. Dal 1960.',
       'foundingDate': String(company.since),
       'vatID': `IT${company.vat}`,
+      'sameAs': socials.map(s => s.href),
       'telephone': company.phone,
       'email': company.email,
       'address': {
