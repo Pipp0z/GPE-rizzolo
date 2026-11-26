@@ -259,5 +259,35 @@ export const certifications = [
   },
 ]
 
+/** Tappe della storia aziendale (fonte: gperizzolo.it, sezione Storia). */
+export const history = [
+  { label: '1960', title: 'Nasce G.P.E. Rizzolo', text: 'Inizia a Santa Giustina in Colle la produzione di profili in legno.' },
+  { label: 'Prima generazione', title: 'Guerrino', text: 'Il mestiere e i suoi valori vengono tramandati di padre in figlio.' },
+  { label: 'Seconda generazione', title: 'Paolo ed Elio', text: 'I figli portano avanti l’azienda, tra filosofia del passato e innovazione.' },
+  { label: 'Oggi', title: 'I nipoti', text: 'Con i nipoti entra la terza generazione: tradizione e sguardo al futuro.' },
+]
+
+/** I sei punti cardine tramandati in famiglia (fonte: gperizzolo.it). */
+export const values = [
+  { name: 'Passione', text: 'Il legno è il nostro mestiere da oltre sessant’anni, e si vede nei dettagli.' },
+  { name: 'Esperienza', text: 'Tre generazioni di competenza nella profilatura in asta.' },
+  { name: 'Qualità', text: 'Precisione e accuratezza delle finiture, su qualsiasi essenza.' },
+  { name: 'Serietà', text: 'Ascoltiamo, ci impegniamo e manteniamo quello che promettiamo.' },
+  { name: 'Puntualità', text: 'Rispettiamo i tempi concordati, perché i vostri tempi sono i nostri.' },
+  { name: 'Dedizione', text: 'Ogni richiesta, standard o su disegno, riceve la stessa cura.' },
+]
+
+export const goals = [
+  { title: 'Soddisfazione del cliente', text: 'Ogni prodotto nasce con un solo obiettivo: soddisfare chi lo ordina.' },
+  { title: 'Tradizione e innovazione', text: 'Restiamo saldi alla filosofia del passato, con un occhio attento alle innovazioni tecnologiche e al futuro.' },
+  { title: 'Su misura come standard', text: 'Trasformare disegni, campioni e idee in profili precisi, in qualsiasi essenza di legno.' },
+  { title: 'Legno responsabile', text: 'Lavorare nel rispetto dell’ambiente, con prodotti certificati FSC® disponibili su richiesta.' },
+]
+
+export const brochures = [
+  { label: 'Brochure aziendale (italiano)', href: '/docs/brochure-gpe-it.pdf' },
+  { label: 'Company brochure (English)', href: '/docs/brochure-gpe-en.pdf' },
+]
+
 export const mailto = (subject: string) =>
   `mailto:${company.email}?subject=${encodeURIComponent(subject)}`
