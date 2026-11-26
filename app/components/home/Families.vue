@@ -5,34 +5,34 @@ const pad = (n: number) => String(n).padStart(2, '0')
 </script>
 
 <template>
-  <section id="prodotti" class="blueprint-dark bg-ink section-pad text-white">
+  <section id="prodotti" class="blueprint bg-paper section-pad">
     <div class="wrap">
       <div v-reveal class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
-          <p class="kicker !text-brand"><b>02</b> Prodotti</p>
-          <h2 class="display mt-5 text-[clamp(3rem,8vw,7rem)] !text-white">Ogni profilo,<br>una sezione.</h2>
+          <p class="kicker"><b>02</b> Prodotti</p>
+          <h2 class="display mt-5 text-[clamp(3rem,8vw,7rem)] ">Ogni profilo,<br>una sezione.</h2>
         </div>
-        <p class="max-w-[360px] text-[16px] leading-relaxed text-white/70">
+        <p class="max-w-[360px] text-[16px] leading-relaxed text-[#3a332c]">
           {{ families.length }} famiglie di prodotto, tutte realizzabili nell’essenza e nella sezione che serve al tuo progetto.
         </p>
       </div>
 
       <div class="grid gap-10 lg:grid-cols-[1.15fr_.85fr] lg:gap-14">
-        <ul class="border-b border-white/15" @mouseleave="activeSlug = activeSlug">
-          <li v-for="(f, i) in families" :key="f.slug" class="border-t border-white/15">
+        <ul class="border-b-2 border-ink" @mouseleave="activeSlug = activeSlug">
+          <li v-for="(f, i) in families" :key="f.slug" class="border-t-2 border-ink">
             <NuxtLink
               :to="`/prodotti/${f.slug}`"
               class="group flex items-center gap-4 py-4 transition md:gap-6 md:py-5"
               @mouseenter="activeSlug = f.slug"
               @focus="activeSlug = f.slug"
             >
-              <span class="w-8 font-mono text-[13px] text-white/40 transition group-hover:text-brand">{{ pad(i + 1) }}</span>
+              <span class="w-8 font-mono text-[13px] text-muted transition group-hover:text-brand-ink">{{ pad(i + 1) }}</span>
               <span
                 class="display flex-1 text-[clamp(1.9rem,4.2vw,3.4rem)] transition duration-300 group-hover:translate-x-2"
-                :class="f.slug === activeSlug ? '!text-brand' : '!text-white'"
+                :class="f.slug === activeSlug ? '!text-brand-ink' : '!text-ink'"
               >{{ f.name }}</span>
               <NuxtImg format="webp" :src="f.image" alt="" width="96" height="64" loading="lazy" class="h-12 w-[72px] shrink-0 object-cover lg:hidden" />
-              <span class="hidden font-mono text-xl text-white/40 transition group-hover:translate-x-1 group-hover:text-brand lg:inline">→</span>
+              <span class="hidden font-mono text-xl text-muted transition group-hover:translate-x-1 group-hover:text-brand-ink lg:inline">→</span>
             </NuxtLink>
           </li>
         </ul>
@@ -40,7 +40,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
         <!-- Anteprima (desktop) -->
         <div class="relative hidden lg:block">
           <div class="sticky top-28">
-            <div class="relative aspect-[4/5] overflow-hidden bg-ink-2">
+            <div class="relative aspect-[4/5] overflow-hidden border-2 border-ink bg-cream shadow-[10px_10px_0_#16120e]">
               <Transition
                 mode="out-in"
                 enter-active-class="transition duration-300"

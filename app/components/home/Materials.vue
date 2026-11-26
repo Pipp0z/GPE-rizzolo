@@ -1,5 +1,5 @@
 <template>
-  <section id="materia" class="section-pad overflow-hidden bg-paper">
+  <section id="materia" class="section-pad overflow-hidden bg-sand">
     <div class="wrap grid items-center gap-12 lg:grid-cols-12 lg:gap-8">
       <div v-reveal class="lg:col-span-5">
         <p class="kicker"><b>03</b> La materia prima</p>
